@@ -1,0 +1,26 @@
+#console-background {
+    padding-top: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    height: 500px;
+}
+
+#console-foreground {
+    padding: 40px 40px 40px 40px;
+    background-color: rgb(56, 55, 55);
+    height: 500px;
+    font-size: 1.5vh;
+    font-family: 'Inconsolata', 'monospace';
+    line-height: 25px;
+}
+
+.command {
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+.result {
+    letter-spacing: 0px;
+    text-align: left;
+    color: lightgray;
+}

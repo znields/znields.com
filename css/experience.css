@@ -1,0 +1,22 @@
+#experience-table {
+    width:100%;
+}
+
+.job {
+    padding-top: 3vh;
+    letter-spacing: 0px;
+}
+
+.company {
+}
+
+.time {
+    font-weight: 300;
+    float: right;
+    font-size: 1.2vh;
+}
+
+.position {
+    font-size: 1.2vh;
+
+}

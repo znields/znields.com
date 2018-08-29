@@ -1,0 +1,15 @@
+
+html {
+    font-family: 'Roboto', 'sans-serif';
+    letter-spacing: 3px;
+}
+
+body {
+    margin: 0 0 0 0;
+    background-color: #ffffff;
+    min-width: 850px;
+}
+
+a {
+    color: #007bff;
+}
