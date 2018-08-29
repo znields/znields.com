@@ -1,0 +1,63 @@
+
+html {
+    font-family: 'Roboto', 'sans-serif';
+    letter-spacing: 3px;
+}
+
+body {
+    margin: 0 0 0 0;
+    background-color: #ffffff;
+}
+
+section {
+    padding: 5% 5% 5% 20%;
+}
+
+a {
+    color: #007bff;
+}
+
+#intro {
+    padding-left: 5vw;
+    height: 100vh;
+}
+
+#hello {
+    margin: 0 0 0 0;
+    font-size: 4vh;
+    height: 40vh;
+    line-height: 40vh;
+    font-weight: normal;
+}
+
+#introduction {
+    margin: 0 0 0 0;
+    height: 20vh;
+    line-height: 60px;
+    max-width: 800px;
+    font-size: 3vh;
+    font-weight: normal;
+}
+
+#contact {
+    margin: 0 0 0 0;
+    height: 40vh;
+    line-height: 40vh;
+    font-size: 2.5vh;
+    font-weight: normal;
+}
+
+#name {
+    font-weight: bold;
+}
+
+.section-title {
+    color: #007bff;
+    font-size: 1.75vh;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section {
+    text-align: center;
+}
