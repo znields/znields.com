@@ -3,15 +3,18 @@
 }
 
 .job {
-    padding-top: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     letter-spacing: 0px;
 }
 
 .company {
+    color: black;
+    text-decoration: none;
 }
 
 .time {
-    font-weight: 300;
+    font-weight: 200;
     float: right;
     font-size: 1.2vh;
 }

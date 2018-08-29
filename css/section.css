@@ -1,5 +1,5 @@
 section {
-    padding: 5% 20% 5% 20%;
+    padding: 0% 15% 5% 20%;
 }
 
 .section-title {
@@ -12,6 +12,7 @@ section {
 }
 
 .section-content {
+    display: inline-block;
     text-align: center;
 }
 

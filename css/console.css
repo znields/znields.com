@@ -1,17 +1,18 @@
 #console-background {
-    padding-top: 20px;
     background-color: lightgray;
     border-radius: 10px;
-    height: 500px;
+    height: 450px;
+    padding: 25px 0px 25px 0px;
 }
 
 #console-foreground {
-    padding: 40px 40px 40px 40px;
+    padding: 40px 40px 0px 40px;
     background-color: rgb(56, 55, 55);
-    height: 500px;
+    height: 450px;
     font-size: 1.5vh;
     font-family: 'Inconsolata', 'monospace';
     line-height: 25px;
+    box-shadow: 5px 5px 5px grey;
 }
 
 .command {
