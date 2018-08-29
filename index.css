@@ -50,9 +50,23 @@ a {
     font-weight: bold;
 }
 
+#console-background {
+    margin-top: 40px;
+    padding-top: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    height: 600px;
+}
+
+#console-foreground {
+    background-color: rgb(56, 55, 55);
+    height: 600px;
+}
+
 .section-title {
     color: #007bff;
-    font-size: 2vh;
+    min-font-size: 40px;
+    font-size: 2.5vh;
     font-weight: bold;
     letter-spacing: 2px;
 }
