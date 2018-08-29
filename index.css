@@ -10,7 +10,7 @@ body {
 }
 
 section {
-    padding: 5% 5% 5% 20%;
+    padding: 5% 20% 5% 20%;
 }
 
 a {
@@ -18,13 +18,14 @@ a {
 }
 
 #intro {
-    padding-left: 5vw;
+    padding-left: 6%;
+    padding-right: 6%;
     height: 100vh;
 }
 
 #hello {
     margin: 0 0 0 0;
-    font-size: 4vh;
+    font-size: 5vh;
     height: 40vh;
     line-height: 40vh;
     font-weight: normal;
@@ -32,16 +33,14 @@ a {
 
 #introduction {
     margin: 0 0 0 0;
-    height: 20vh;
-    line-height: 60px;
-    max-width: 800px;
-    font-size: 3vh;
+    max-width: 850px;
+    font-size: 4vh;
     font-weight: normal;
 }
 
 #contact {
     margin: 0 0 0 0;
-    height: 40vh;
+    height: 20vh;
     line-height: 40vh;
     font-size: 2.5vh;
     font-weight: normal;
@@ -53,7 +52,7 @@ a {
 
 .section-title {
     color: #007bff;
-    font-size: 1.75vh;
+    font-size: 2vh;
     font-weight: bold;
     letter-spacing: 2px;
 }
