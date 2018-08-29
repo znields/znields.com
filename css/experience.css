@@ -9,6 +9,7 @@
 }
 
 .company {
+    font-size: 1.2;
     color: black;
     text-decoration: none;
 }
@@ -16,10 +17,10 @@
 .time {
     font-weight: 200;
     float: right;
-    font-size: 1.2vh;
+    font-size: 1.1vh;
 }
 
 .position {
-    font-size: 1.2vh;
+    font-size: 1.1vh;
 
 }
