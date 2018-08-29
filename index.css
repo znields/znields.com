@@ -59,8 +59,11 @@ a {
 }
 
 #console-foreground {
+    padding: 40px 40px 40px 40px;
     background-color: rgb(56, 55, 55);
     height: 600px;
+    font-family: 'Inconsolata', 'monospace';
+    line-height: 25px;
 }
 
 .section-title {
@@ -73,4 +76,13 @@ a {
 
 .section {
     text-align: center;
+}
+
+.command {
+    text-align: left;
+    color: white;
+}
+.result {
+    text-align: left;
+    color: lightgray;
 }
