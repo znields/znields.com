@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7d87302-34fe-4288-9331-eb3e89ce900f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/spacing.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/spacing.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,11 +38,12 @@
     <session id="1246162542">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,16 +66,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2577" />
-          <entry key="html" value="3405" />
+          <entry key="css" value="2619" />
+          <entry key="html" value="3411" />
           <entry key="js" value="55" />
           <entry key="vue" value="1071" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2577" />
-          <entry key="HTML" value="3405" />
+          <entry key="CSS" value="2619" />
+          <entry key="HTML" value="3411" />
           <entry key="JavaScript" value="55" />
           <entry key="Vue.js" value="1071" />
         </counts>
@@ -119,11 +121,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+            <state relative-caret-position="34">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -137,10 +139,7 @@
                 <element signature="n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#ul#0;n#div#1;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#2;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#2;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
@@ -164,17 +163,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/fonts.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="204">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/spacing.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -234,10 +233,10 @@
         <option value="$PROJECT_DIR$/css/skills.css" />
         <option value="$PROJECT_DIR$/css/header.css" />
         <option value="$PROJECT_DIR$/css/section.css" />
-        <option value="$PROJECT_DIR$/css/fonts.css" />
         <option value="$PROJECT_DIR$/css/index.css" />
-        <option value="$PROJECT_DIR$/css/spacing.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/fonts.css" />
+        <option value="$PROJECT_DIR$/css/spacing.css" />
       </list>
     </option>
   </component>
@@ -248,8 +247,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3433" />
-    <option name="width" value="1734" />
+    <option name="x" value="4374" />
+    <option name="width" value="2513" />
     <option name="height" value="1447" />
   </component>
   <component name="ProjectView">
@@ -257,7 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,6 +272,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,18 +324,19 @@
       <workItem from="1535650095993" duration="503000" />
       <workItem from="1535653871029" duration="781000" />
       <workItem from="1535655093960" duration="1177000" />
-      <workItem from="1535658206338" duration="2500000" />
+      <workItem from="1535658206338" duration="2738000" />
+      <workItem from="1535668923753" duration="868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54545000" />
+    <option name="totallyTimeSpent" value="55651000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3433" y="0" width="1734" height="1447" extended-state="0" />
+    <frame x="4374" y="0" width="2513" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22818395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15636364" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -393,61 +393,19 @@
     <entry file="file://$PROJECT_DIR$/src/plugins/vuetify.js" />
     <entry file="file://$PROJECT_DIR$/index.js" />
     <entry file="file://$PROJECT_DIR$/index.css" />
-    <entry file="file://$PROJECT_DIR$/assets/search-queue.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/search-queue.png" />
     <entry file="file://$PROJECT_DIR$/css/footer.css" />
-    <entry file="file://$PROJECT_DIR$/css/console.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/experience.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/projects.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/skills.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/header.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/section.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/spacing.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/fonts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/console.css" />
+    <entry file="file://$PROJECT_DIR$/css/experience.css" />
+    <entry file="file://$PROJECT_DIR$/css/projects.css" />
+    <entry file="file://$PROJECT_DIR$/css/skills.css" />
+    <entry file="file://$PROJECT_DIR$/css/header.css" />
+    <entry file="file://$PROJECT_DIR$/css/section.css" />
+    <entry file="file://$PROJECT_DIR$/css/index.css" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+        <state relative-caret-position="34">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -461,10 +419,7 @@
             <element signature="n#div#0;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#1;n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#1;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#div#2;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#3;n#body#0;n#html#0;n#!!top" />
@@ -481,6 +436,20 @@
             <element signature="n#a#2;n#div#0;n#section#4;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#section#4;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/spacing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>

@@ -2,6 +2,9 @@ body {
     margin: 0 0 0 0;
     background-color: #ffffff;
     min-width: 850px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 header {
