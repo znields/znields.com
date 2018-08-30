@@ -12,3 +12,10 @@ section {
 
 .section-content {
 }
+
+#footer {
+    padding-left: 10vw;
+    padding-right: 0;
+    width: 80vw;
+    min-width: 600px;
+}
