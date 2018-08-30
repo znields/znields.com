@@ -4,19 +4,11 @@ section {
 
 .section-title {
     color: #007bff;
-    min-font-size: 40px;
-    font-size: 2.5vh;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
     padding-bottom: 2vh;
 }
 
 .section-content {
-    display: inline-block;
-    text-align: center;
-}
-
-.company {
-    font-weight: bold;
-    font-size: 1.4vh;
 }

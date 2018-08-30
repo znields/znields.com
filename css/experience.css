@@ -9,18 +9,19 @@
 }
 
 .company {
-    font-size: 1.2;
+    font-size: 22px;
+    font-weight: bold;
     color: black;
     text-decoration: none;
 }
 
 .time {
-    font-weight: 200;
+    font-family: 'Inconsolata', 'monospace';
     float: right;
-    font-size: 1.1vh;
+    font-size: 20px;
 }
 
 .position {
-    font-size: 1.1vh;
+    font-size: 20px;
 
 }
