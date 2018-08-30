@@ -7,22 +7,23 @@ header {
 #hello {
     margin: 0 0 0 0;
     font-size: 5vh;
-    height: 40vh;
-    line-height: 40vh;
+    height: 30vh;
+    line-height: 30vh;
     font-weight: 100;
 }
 
 #introduction {
     margin: 0 0 0 0;
     max-width: 850px;
-    font-size: 4.5vh;
+    font-size: calc(2.5vh + 15px);
     font-weight: 100;
+    padding-top: 5vh;
+    padding-bottom: 15vh;
 }
 
 #contact {
     margin: 0 0 0 0;
     height: 20vh;
-    line-height: 25vh;
     font-size: 2.5vh;
     font-weight: 100;
 }
