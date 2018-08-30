@@ -9,22 +9,22 @@ header {
     font-size: 5vh;
     height: 40vh;
     line-height: 40vh;
-    font-weight: normal;
+    font-weight: 100;
 }
 
 #introduction {
     margin: 0 0 0 0;
     max-width: 850px;
-    font-size: 4vh;
-    font-weight: normal;
+    font-size: 4.5vh;
+    font-weight: 100;
 }
 
 #contact {
     margin: 0 0 0 0;
     height: 20vh;
-    line-height: 20vh;
-    font-size: 2vh;
-    font-weight: normal;
+    line-height: 25vh;
+    font-size: 2.5vh;
+    font-weight: 100;
 }
 
 #name {
