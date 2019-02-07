@@ -1,14 +1,68 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
+  color: #000002;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+a {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  padding: 2px 3px;
+  -webkit-box-shadow: inset 0 -3px 0 #007bff;
+  box-shadow: inset 0 -3px 0 #007bff;
+  color: black;
+}
+
+a:hover {
+  -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
+  box-shadow: inset 0 -33px 0 0 #007bff;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 780px) {
+  h1 {
+    font-size: 2.35rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
 }

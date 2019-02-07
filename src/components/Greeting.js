@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 
-const messageStyle = {
-    margin: 0,
-    paddingTop: '10vh',
-    paddingLeft: '10vh'
+const greetingStyle = {
+    height: '15vh',
 };
 
 class Greeting extends Component {
     render() {
         return (
-            <div>
-                <h1 style={messageStyle}> {this.props.message} </h1>
+            <div style={greetingStyle}>
+                <h1> {this.props.message} </h1>
             </div>
         );
     }
