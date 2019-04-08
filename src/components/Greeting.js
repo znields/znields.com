@@ -12,10 +12,12 @@ const Container = Keyframes.Spring({
     show: { opacity: 1 },
     wave: async (next, cancel, ownProps) => {
         await next({ transform: 'rotate(0deg)', config: config.gentle });
-        await next({ transform: 'rotate(40deg)', config: { easing: t => t, duration: 100 }});
-        await next({ transform: 'rotate(-40deg)', config: { easing: t => t, duration: 200 }});
-        await next({ transform: 'rotate(40deg)', config: { easing: t => t, duration: 200 }});
-        await next({ transform: 'rotate(-40deg)', config: { easing: t => t, duration: 200 }});
+        await next({ transform: 'rotate(20deg)', config: { easing: t => t, duration: 100 }});
+        await next({ transform: 'rotate(-20deg)', config: { easing: t => t, duration: 150 }});
+        await next({ transform: 'rotate(20deg)', config: { easing: t => t, duration: 150 }});
+        await next({ transform: 'rotate(-20deg)', config: { easing: t => t, duration: 150 }});
+        await next({ transform: 'rotate(20deg)', config: { easing: t => t, duration: 150 }});
+        await next({ transform: 'rotate(-20deg)', config: { easing: t => t, duration: 150 }});
         await next({ transform: 'rotate(0deg)',  config: { easing: t => t, duration: 100 }});
         ownProps.onRest();
     }
@@ -45,7 +47,7 @@ class Greeting extends Component {
                 <Container
                     state={animateWave ? 'wave': 'show'}
                     onRest={this.onEndWave}>
-                        {props => <Emoji onClick={this.onClickWave} symbol="👋" style={props} label="wave"/>}
+                        {props => <Emoji onClick={this.onClickWave} symbol="👋" style={{...props, transformOrigin: 'bottom right'}} label="wave"/>}
                 </Container>
             </div>
         );
