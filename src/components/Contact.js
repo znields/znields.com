@@ -7,12 +7,16 @@ const Container = Keyframes.Spring({
     show: { opacity: 1 },
     point: async (next, cancel, ownProps) => {
         await next({ paddingLeft: 0, paddingRight: 0, config: { easing: t => t, duration: 100 }});
-        await next({ paddingLeft: 0, paddingRight: 5, config: { easing: t => t, duration: 100 }});
-        await next({ paddingLeft: 5, paddingRight: 0, config: { easing: t => t, duration: 100 }});
+        await next({ paddingLeft: 10, paddingRight: 0, config: { easing: t => t, duration: 100 }});
         await next({ paddingLeft: 0, paddingRight: 0, config: { easing: t => t, duration: 100 }});
         ownProps.onRest();
     }
 });
+
+const  style = {
+    bottom: '5vh',
+    position: 'absolute'
+};
 
 class Contact extends Component {
 
@@ -33,7 +37,7 @@ class Contact extends Component {
         const { pointAnimation } = this.state;
 
         return (
-            <div>
+            <div style={style}>
                 <h2> Get in touch&nbsp;
                     <Container state={pointAnimation ? "point": "show"} onRest={this.onPointEnd} >
                         { props => <Emoji  onClick={this.onClickPoint} style={props} symbol=" 👉 " label="point-right"/> }

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Keyframes, config } from 'react-spring/renderprops';
+import { Keyframes } from 'react-spring/renderprops';
 import Emoji from "./Emoji";
 
 const greetingStyle = {
-    height: '15vh',
+    height: '20vh',
     fontSize: 35
 };
 
@@ -11,7 +11,7 @@ const greetingStyle = {
 const Container = Keyframes.Spring({
     show: { opacity: 1 },
     wave: async (next, cancel, ownProps) => {
-        await next({ transform: 'rotate(0deg)', config: config.gentle });
+        await next({ transform: 'rotate(0deg)' });
         await next({ transform: 'rotate(20deg)', config: { easing: t => t, duration: 100 }});
         await next({ transform: 'rotate(-20deg)', config: { easing: t => t, duration: 150 }});
         await next({ transform: 'rotate(20deg)', config: { easing: t => t, duration: 150 }});

@@ -5,6 +5,8 @@ body {
   color: #000002;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -59,7 +61,7 @@ h2 {
 
 @media only screen and (max-width: 500px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   h2 {
