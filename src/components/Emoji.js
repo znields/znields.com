@@ -1,10 +1,12 @@
 import React from 'react';
+
+
 const Emoji = props => (
     <span
+        style={{...props.style, display: 'inline-block', transformOrigin: 'bottom right'}}
+        onClick={props.onClick}
         className="emoji"
         role="img"
-        aria-label={props.label ? props.label : ""}
-        aria-hidden={props.label ? "false" : "true"}
     >
         {props.symbol}
     </span>

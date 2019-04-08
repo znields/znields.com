@@ -5,8 +5,8 @@ class Section extends Component {
     render() {
         return (
             <section>
-                <div className="title"> {this.props.title} </div>
-
+                <h2>{this.props.title}</h2>
+                {this.props.children}
             </section>
         );
     }

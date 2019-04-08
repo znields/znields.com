@@ -2,19 +2,33 @@ import React, { Component } from 'react';
 import Greeting from '../components/Greeting';
 import Introduction from "../components/Introduction";
 import Contact from "../components/Contact";
-import './Header.css';
-import Emoji from "../components/Emoji";
+
+
+
+const headerStyle = {
+    padding: "10vh 10vw",
+    height: "100vh",
+    boxSizing: "border-box"
+};
+
 
 class Header extends Component {
 
+    state = {
+        animateWave: false,
+
+    };
+
     render() {
-        const introduction = "a software engineer with interests in design, web development, and data science";
+
         return (
-            <header>
-                <Greeting message={<span>Hello! <Emoji symbol="👋" label="point-right"/></span>}/>
-                <Introduction name={"Isaiah Nields"} message={introduction}/>
-                <Contact email={"imnields@gmail.com"}/>
-            </header>
+            <div>
+                <header style={headerStyle}>
+                    <Greeting/>
+                    <Introduction/>
+                    <Contact email="imnields@gmail.com"/>
+                </header>
+            </div>
         );
     }
 }
