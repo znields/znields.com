@@ -1,0 +1,199 @@
+html body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: #000002;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+::selection {
+    background: #ffe57f;
+}
+
+a.m {
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    padding: 2px 3px;
+    box-shadow: inset 0 -3px 0 #007bff;
+    color: black;
+}
+
+a:hover.m {
+    -webkit-box-shadow: inset 0 -33px 0 0 #007bff;
+    box-shadow: inset 0 -40px 0 0 #007bff;
+    color: #fff;
+}
+
+a {
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: inset 0 0 0 black;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    box-shadow: inset 0 -1.5px 0 0 black;
+}
+
+:root {
+    --base-size: 50px
+}
+
+.xl {
+    font-size: calc(var(--base-size) * 1.0);
+}
+
+.l {
+    font-size: calc(var(--base-size) * 0.75);
+}
+
+.m {
+    font-size: calc(var(--base-size) * 0.55);
+}
+
+.s {
+    font-size: calc(var(--base-size) * 0.40);
+}
+
+.xs {
+    font-size: calc(var(--base-size) * 0.3);
+}
+
+@media only screen and (max-width: 800px) {
+    .xl {
+        font-size: calc(var(--base-size) * 1.0 * 0.9);
+    }
+
+    .l {
+        font-size: calc(var(--base-size) * 0.75  * 0.9);
+    }
+
+    .m {
+        font-size: calc(var(--base-size) * 0.55  * 0.9);
+    }
+
+    .s {
+        font-size: calc(var(--base-size) * 0.40  * 0.9);
+    }
+
+    .xs {
+        font-size: calc(var(--base-size) * 0.3  * 0.9);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .xl {
+        font-size: calc(var(--base-size) * 1.0 * 0.75);
+    }
+
+    .l {
+        font-size: calc(var(--base-size) * 0.75  * 0.75);
+    }
+
+    .m {
+        font-size: calc(var(--base-size) * 0.55  * 0.75);
+    }
+
+    .s {
+        font-size: calc(var(--base-size) * 0.40  * 0.75);
+    }
+
+    .xs {
+        font-size: calc(var(--base-size) * 0.3  * 0.75);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .xl {
+        font-size: calc(var(--base-size) * 1.0 * 0.65);
+    }
+
+    .l {
+        font-size: calc(var(--base-size) * 0.75  * 0.65);
+    }
+
+    .m {
+        font-size: calc(var(--base-size) * 0.55  * 0.65);
+    }
+
+    .s {
+        font-size: calc(var(--base-size) * 0.40  * 0.65);
+    }
+
+    .xs {
+        font-size: calc(var(--base-size) * 0.3  * 0.65);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .xl {
+        font-size: calc(var(--base-size) * 1.0 * 0.6);
+    }
+
+    .l {
+        font-size: calc(var(--base-size) * 0.75  * 0.6);
+    }
+
+    .m {
+        font-size: calc(var(--base-size) * 0.55  * 0.6);
+    }
+
+    .s {
+        font-size: calc(var(--base-size) * 0.40  * 0.6);
+    }
+
+    .xs {
+        font-size: calc(var(--base-size) * 0.3  * 0.6);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .xl {
+        font-size: calc(var(--base-size) * 1.0 * 0.55);
+    }
+
+    .l {
+        font-size: calc(var(--base-size) * 0.75  * 0.55);
+    }
+
+    .m {
+        font-size: calc(var(--base-size) * 0.55  * 0.55);
+    }
+
+    .s {
+        font-size: calc(var(--base-size) * 0.40  * 0.55);
+    }
+
+    .xs {
+        font-size: calc(var(--base-size) * 0.3  * 0.55);
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .xl {
+        font-size: calc(var(--base-size) * 1.0 * 0.5);
+    }
+
+    .l {
+        font-size: calc(var(--base-size) * 0.75  * 0.5);
+    }
+
+    .m {
+        font-size: calc(var(--base-size) * 0.55  * 0.5);
+    }
+
+    .s {
+        font-size: calc(var(--base-size) * 0.40  * 0.5);
+    }
+
+    .xs {
+        font-size: calc(var(--base-size) * 0.3  * 0.5);
+    }
+}
