@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-grid-system';
+import { Row } from 'react-grid-system';
 import Section from '../components/Section';
 import SmallLink from '../components/SmallLink';
 import Project from '../components/Project';
