@@ -34,7 +34,7 @@ class ControlledTabs extends React.Component {
     return (
       <Tab.Container defaultActiveKey={key}>
         <Row>
-          <Col sm={3} style={{ marginRight: '10px' }}>
+          <Col sm={3} style={{ marginRight: '10px', marginBottom: '10px' }}>
             <Nav variant="pills" className="flex-column">
               { jobs.map(job => (
                 <Nav.Item key={job.company}>

@@ -21,7 +21,7 @@ function Social(props) {
 
   return (
     <div style={style.container}>
-      { sites.map(url => <SocialIcon key={url} style={style.icon} url={url} />)}
+      { sites.map(url => <SocialIcon key={url} style={style.icon} bgColor="#007bff" url={url} />)}
     </div>
   );
 }

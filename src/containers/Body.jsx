@@ -149,14 +149,14 @@ function Body() {
                 date="Feb 1, 2019"
               />
             </Col>
-            <Col>
-              <Paper
-                title="DeepTrash @ MakeHarvard 2019"
-                img="https://cdn-images-1.medium.com/max/800/1*DBhJOOcWXUiVjZaYfExWSQ.gif"
-                link="https://medium.com/@isaiahnields/deeptrash-makeharvard-2019-aa0a9cf0b68b"
-                date="Feb 6, 2019"
-              />
-            </Col>
+            {/*<Col>*/}
+            {/*  <Paper*/}
+            {/*    title="DeepTrash @ MakeHarvard 2019"*/}
+            {/*    img="https://cdn-images-1.medium.com/max/800/1*DBhJOOcWXUiVjZaYfExWSQ.gif"*/}
+            {/*    link="https://medium.com/@isaiahnields/deeptrash-makeharvard-2019-aa0a9cf0b68b"*/}
+            {/*    date="Feb 6, 2019"*/}
+            {/*  />*/}
+            {/*</Col>*/}
           </Row>
         </Container>
 

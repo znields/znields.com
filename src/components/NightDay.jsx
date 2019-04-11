@@ -43,6 +43,8 @@ class NightDay extends React.Component {
         if (a.innerText !== 'imnields@gmail.com' && a.innerText !== '🔗'
           && a.className !== 'social-icon'
           && a.getAttribute('role') !== 'tab') a.style.boxShadow = !day ? null : 'inset 0 -1.5px 0 0 white';
+
+        if (a.getAttribute('role') === 'tab') a.style.border = day ? '' : '';
       }
 
       // set writing borders to correct color

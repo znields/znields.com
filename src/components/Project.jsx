@@ -16,6 +16,7 @@ const style = {
   },
   award: {
     fontWeight: 'bold',
+    fontSize: '11pt',
   },
 };
 

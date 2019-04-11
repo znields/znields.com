@@ -7,27 +7,28 @@ import NightDay from '../components/NightDay';
 const style = {
   container: {
     height: '100vh',
+    minHeight: '500px',
+    marginBottom: '100px',
   },
   greeting: {
-    position: 'absolute',
+    position: 'relative',
     left: '10vw',
     top: '15vh',
     letterSpacing: 1,
   },
   introduction: {
-    position: 'absolute',
+    position: 'relative',
     left: '10vw',
     top: '35vh',
     maxWidth: 700,
-    marginRight: '15vw',
     letterSpacing: 1,
     lineHeight: 1.9,
+    marginRight: '30vw',
   },
   contact: {
-    position: 'absolute',
+    position: 'relative',
     left: '10vw',
-    top: '80vh',
-    pointerEvents: 'auto',
+    top: '55vh',
   },
 };
 
