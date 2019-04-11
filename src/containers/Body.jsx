@@ -173,7 +173,7 @@ function Body() {
           <Col xl={3} md={6} xs={6}>
             <List
               title="Tools"
-              items={['Bash', 'Git & GitHub', 'Postman', 'Chrome DevTools']}
+              items={['Bash', 'Git & GitHub', 'Postman', 'Chrome DevTools', 'MongoDB']}
             />
           </Col>
           <Col xl={3} md={6} xs={6}>

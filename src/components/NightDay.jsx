@@ -5,24 +5,27 @@ import Emoji from './Emoji';
 
 const Containers = {
   center: Keyframes.Spring({
-    show: { opacity: 1 },
+    show: { opacity: 1, transform: 'rotate(0deg)' },
     spin: async (next) => {
-      await next({ transform: 'rotate(0deg)', config: { easing: t => t, duration: 0 } });
-      await next({ transform: 'rotate(1080000deg)', config: { easing: t => t, duration: 50000000 } });
+      while (true) {
+        await next({ transform: 'rotate(0deg)', config: { easing: t => t, duration: 0 } });
+        await next({ transform: 'rotate(360deg)', config: { easing: t => t, duration: 10000 } });
+      }
     },
   }),
   earth: Keyframes.Spring({
     show: { opacity: 1 },
     spin: async (next) => {
-      await next({ transform: 'rotate(0deg)', config: { easing: t => t, duration: 0 } });
-      await next({ transform: 'rotate(39420000deg)', config: { easing: t => t, duration: 50000000 } });
+      while (true) {
+        await next({ transform: 'rotate(0deg)', config: { easing: t => t, duration: 0 } });
+        await next({ transform: 'rotate(13140deg)', config: { easing: t => t, duration: 10000 } });
+      }
     },
   }),
   comet: Keyframes.Spring({
     show: { opacity: 1 },
     spin: async (next) => {
-      await next({ transform: 'rotate(180deg)', config: { easing: t => t, duration: 0 } });
-      await next({ transform: 'rotate(3180deg)', config: { easing: t => t, duration: 50000000 } });
+      await next({ transform: 'rotate(180deg)', config: { easing: t => t, duration: 0 } })
     },
   }),
 };
@@ -82,14 +85,12 @@ class NightDay extends React.Component {
                   </Containers.earth>
                 )
                   : (
-                    <Containers.comet state="spin">
-                      { rocketStyle => (
-                        <Emoji
-                          style={{ ...rocketStyle, fontSize: 19 }}
-                          symbol="🚀️"
-                        />
-                      )}
-                    </Containers.comet>
+                    <Emoji
+                      class="xs"
+                      style={{ transform: 'rotate(180deg)' }}
+                      symbol="🚀️"
+                    />
+
                   )}
               </span>
             ) }
