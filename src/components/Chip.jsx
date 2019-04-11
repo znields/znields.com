@@ -1,7 +1,7 @@
 import React from 'react';
 
 const style = {
-  margin: '10px 0px 0px 10px',
+  margin: '10px 0px 0px 15px',
   color: 'rgb(0, 123, 255)',
   border: '1px solid rgb(0, 123, 255)',
   borderRadius: '5px',
@@ -9,7 +9,6 @@ const style = {
   paddingRight: '10px',
   fontWeight: 'bold',
   fontSize: '10pt',
-  // display: 'block-inline',
   whiteSpace: 'nowrap',
 };
 

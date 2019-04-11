@@ -1,38 +1,39 @@
 import React from 'react';
-import { Row } from 'react-grid-system';
+import { Row, Col, Container } from 'react-bootstrap';
+import Tabs from '../components/Tabs';
 import Section from '../components/Section';
 import SmallLink from '../components/SmallLink';
 import Project from '../components/Project';
+import Paper from '../components/Paper';
+import List from '../components/List';
 
 const style = {
-  paddingLeft: '8vw',
-  paddingRight: '8vw',
-  paddingTop: '4vh',
+  marginLeft: '6vw',
+  marginRight: '5vw',
 };
 
 function Body() {
   return (
     <div style={style}>
       <Section title="About Me">
-        <p>
-          {"I'm a 2nd-year computer science undergrad at the "}
-          <SmallLink href="http://www.ufl.edu/">University of Florida</SmallLink>
-          {". While I'm not big on going to class, I enjoy learning through my personal projects. "}
-          {' For my projects, I focus on simplicity, efficiency, and utility. '}
-        </p>
-        <p>
-          {"When I'm not in in front of a computer, I enjoy playing basketball and reading."}
-        </p>
+        {"I'm a 2nd-year computer science undergrad at the "}
+        <SmallLink href="http://www.ufl.edu/">University of Florida</SmallLink>
+        {". While I'm not big on going to class, I enjoy learning through my personal projects. "}
+        {' For my projects, I focus on simplicity, efficiency, and utility. '}
+
+        {"When I'm not in in front of a computer, I enjoy playing basketball and reading."}
+
 
       </Section>
 
-      <Section title="Projects" style={{ width: '100vh' }}>
+      <Section title="Projects">
         <Row>
           <Project
             title="DeepTrash"
             icon="https://raw.githubusercontent.com/isaiahnields/deep-trash/master/icon.png"
             stack={['Keras', 'Tensorflow', 'Python', 'Arduino', 'Raspberry Pi']}
             href="https://github.com/isaiahnields/deep-trash"
+            award="🏆 1st Place - MakeHarvard 2019 🏆"
           >
             An intelligent trashcan that automatically sorts your waste for you
           </Project>
@@ -42,6 +43,7 @@ function Body() {
             title="Danger.ai"
             stack={['OpenPose', 'Python', 'JavaScript', 'HTML', 'CSS', 'Google Cloud Platform']}
             href="https://github.com/isaiahnields/danger.ai"
+            award="🥈 2nd Place - SwampHacks V 🥈"
           >
             A video monitoring system powered by deep learning
           </Project>
@@ -60,6 +62,7 @@ function Body() {
             title="CSV to SQLite"
             stack={['Electron', 'JavaScript', 'HTML', 'CSS', 'SQLite', 'Material UI']}
             href="https://github.com/isaiahnields/csv-to-sqlite"
+            award="☁️ 950+ downloads ☁️"
           >
             A desktop app to convert CSV files to SQLite databases
           </Project>
@@ -102,17 +105,90 @@ function Body() {
         </Row>
       </Section>
 
-      <Section title="Experience" style={{ width: '100vh' }}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Cursus sit amet dictum sit. Tellus in metus vulputate eu scelerisque felis. Sit amet justo donec enim. Sit amet cursus sit amet dictum sit amet. Gravida quis blandit turpis cursus in hac habitasse platea. Consequat interdum varius sit amet. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Euismod elementum nisi quis eleifend quam. Turpis in eu mi bibendum neque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Nullam vehicula ipsum a arcu cursus vitae. At in tellus integer feugiat scelerisque varius morbi enim. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Eu facilisis sed odio morbi quis commodo odio aenean. Donec ac odio tempor orci dapibus ultrices in. At imperdiet dui accumsan sit amet nulla.</p>
+      <Section title="Experience">
+        <Tabs
+          jobs={[
+            {
+              company: 'Facebook',
+              items: ['Will be working on applied machine learning projects for the Video ASR team.', 'Super pumped for my first day—May 28.'],
+              location: 'Menlo Park, CA',
+              date: 'May 2019 - Aug 2019',
+            },
+            {
+              company: 'iMobile3',
+              items: ['Built machine learning models to predict merchant churn.', 'Analyzed data about 22 competitor POS applications.', 'Created tools to automate business tasks which saved hours for team.'],
+              location: 'Jacksonville, FL',
+              date: 'Jan 2018 - Jan 2019',
+            },
+            {
+              company: 'Coleman Lab',
+              items: ['Developed a low-cost operant chamber for mouse behavior experiments.', 'Created object tracking script to record mouse (x, y) position.', 'Received 1st place at Florida State Science Fair for work.'],
+              location: 'Gainesville, FL',
+              date: 'May 2016 - May 2017',
+            },
+          ]}
+        />
       </Section>
 
-      <Section title="Writing" style={{ width: '100vh' }}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Cursus sit amet dictum sit. Tellus in metus vulputate eu scelerisque felis. Sit amet justo donec enim. Sit amet cursus sit amet dictum sit amet. Gravida quis blandit turpis cursus in hac habitasse platea. Consequat interdum varius sit amet. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Euismod elementum nisi quis eleifend quam. Turpis in eu mi bibendum neque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Nullam vehicula ipsum a arcu cursus vitae. At in tellus integer feugiat scelerisque varius morbi enim. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Eu facilisis sed odio morbi quis commodo odio aenean. Donec ac odio tempor orci dapibus ultrices in. At imperdiet dui accumsan sit amet nulla.</p>
+      <Section title="Writing">
+        <Container>
+          <Row>
+            <Col lg={6} md={6}>
+              <Paper
+                title="Neural Networks: why do they work so well? Part I"
+                img="https://raw.githubusercontent.com/isaiahnields/machine-learning-models/master/demos/results/2_spiral_neural_network.gif"
+                link="https://towardsdatascience.com/neural-networks-why-do-they-work-so-well-part-i-22f0d3690511"
+                date="Apr 3, 2019"
+              />
+            </Col>
+            <Col lg={6} md={6}>
+              <Paper
+                title="Linear Regression from Scratch"
+                img="https://raw.githubusercontent.com/isaiahnields/machine-learning-models/master/demos/results/linear_regression_train.gif"
+                link="https://towardsdatascience.com/linear-regression-from-scratch-977cd3a1db16"
+                date="Feb 1, 2019"
+              />
+            </Col>
+            <Col>
+              <Paper
+                title="DeepTrash @ MakeHarvard 2019"
+                img="https://cdn-images-1.medium.com/max/800/1*DBhJOOcWXUiVjZaYfExWSQ.gif"
+                link="https://medium.com/@isaiahnields/deeptrash-makeharvard-2019-aa0a9cf0b68b"
+                date="Feb 6, 2019"
+              />
+            </Col>
+          </Row>
+        </Container>
+
       </Section>
 
-
-      <Section title="Skills" style={{ width: '100vh' }}>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat consequat mauris nunc congue. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit. Cursus sit amet dictum sit. Tellus in metus vulputate eu scelerisque felis. Sit amet justo donec enim. Sit amet cursus sit amet dictum sit amet. Gravida quis blandit turpis cursus in hac habitasse platea. Consequat interdum varius sit amet. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Euismod elementum nisi quis eleifend quam. Turpis in eu mi bibendum neque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus. Nullam vehicula ipsum a arcu cursus vitae. At in tellus integer feugiat scelerisque varius morbi enim. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Eu facilisis sed odio morbi quis commodo odio aenean. Donec ac odio tempor orci dapibus ultrices in. At imperdiet dui accumsan sit amet nulla.</p>
+      <Section title="Skills">
+        <Row>
+          <Col xl={3} md={6} xs={6}>
+            <List
+              title="Languages"
+              items={['Python', 'JavaScript', 'Java', 'C++', 'HTML', 'CSS', 'SQL']}
+            />
+          </Col>
+          <Col xl={3} md={6} xs={6}>
+            <List
+              title="Tools"
+              items={['Bash', 'Git & GitHub', 'Postman', 'Chrome DevTools']}
+            />
+          </Col>
+          <Col xl={3} md={6} xs={6}>
+            <List
+              title="Libraries"
+              items={['TensorFlow', 'PyTorch', 'Keras', 'Pandas', 'React', 'Node.js', 'Electron']}
+            />
+          </Col>
+          <Col xl={3} md={6} xs={6}>
+            <List
+              title="Machine Learning"
+              items={['Feedforward NN', 'Recurrent NN', 'Convolutional NN', 'Gradient Descent', 'Regression', 'Gradient Boosting']}
+            />
+          </Col>
+        </Row>
       </Section>
     </div>
   );

@@ -1,35 +1,32 @@
 import React, { Component } from 'react';
-import { Row, Col, Container } from 'react-grid-system';
 import { Keyframes, config } from 'react-spring/renderprops';
 import Emoji from '../components/Emoji';
+import NightDay from '../components/NightDay';
 
 
 const style = {
   container: {
-    margin: '10vh 10vw 0 10vw',
-    padding: '0 0',
-    height: '90vh',
-    width: '75vw',
-    maxWidth: 800,
-    pointerEvents: 'none',
+    height: '100vh',
   },
   greeting: {
-    height: '20vh',
-    paddingTop: '10vh',
-    maxWidth: 20,
+    position: 'absolute',
+    left: '10vw',
+    top: '15vh',
     letterSpacing: 1,
-    pointerEvents: 'none',
   },
   introduction: {
-    paddingTop: '5vh',
-    height: '35vh',
-    lineHeight: 2.0,
-    verticalAlign: 'middle',
+    position: 'absolute',
+    left: '10vw',
+    top: '35vh',
+    maxWidth: 700,
+    marginRight: '15vw',
     letterSpacing: 1,
+    lineHeight: 1.9,
   },
   contact: {
-    height: '30vh',
-    paddingTop: '15vh',
+    position: 'absolute',
+    left: '10vw',
+    top: '80vh',
     pointerEvents: 'auto',
   },
 };
@@ -40,17 +37,33 @@ const Containers = {
     wave: async (next, cancel, ownProps) => {
       await next({ transform: 'rotate(0deg)', paddingTop: 0, paddingLeft: 0 });
       // wave 1
-      await next({ transform: 'rotate(-10deg)', paddingLeft: 0, paddingTop: 15, config: { ...config.gentle, duration: 150 } });
-      await next({ transform: 'rotate(0deg)', paddingLeft: 19, paddingTop: 0, config: { ...config.gentle, duration: 150 } });
+      await next({
+        transform: 'rotate(-10deg)', paddingLeft: 0, paddingTop: 15, config: { ...config.gentle, duration: 150 },
+      });
+      await next({
+        transform: 'rotate(0deg)', paddingLeft: 19, paddingTop: 0, config: { ...config.gentle, duration: 150 },
+      });
       // wave 2
-      await next({ transform: 'rotate(-10deg)', paddingLeft: 0, paddingTop: 15, config: { ...config.gentle, duration: 200 } });
-      await next({ transform: 'rotate(0deg)', paddingLeft: 16, paddingTop: 0, config: { ...config.gentle, duration: 200 } });
+      await next({
+        transform: 'rotate(-10deg)', paddingLeft: 0, paddingTop: 15, config: { ...config.gentle, duration: 200 },
+      });
+      await next({
+        transform: 'rotate(0deg)', paddingLeft: 16, paddingTop: 0, config: { ...config.gentle, duration: 200 },
+      });
       // wave 3
-      await next({ transform: 'rotate(-10deg)', paddingLeft: 0, paddingTop: 15, config: { ...config.gentle, duration: 200 } });
-      await next({ transform: 'rotate(0deg)', paddingLeft: 16, paddingTop: 0, config: { ...config.gentle, duration: 200 } });
+      await next({
+        transform: 'rotate(-10deg)', paddingLeft: 0, paddingTop: 15, config: { ...config.gentle, duration: 200 },
+      });
+      await next({
+        transform: 'rotate(0deg)', paddingLeft: 16, paddingTop: 0, config: { ...config.gentle, duration: 200 },
+      });
       // wave 4
-      await next({ transform: 'rotate(-2deg)', paddingLeft: 13, paddingTop: 2, config: { ...config.gentle, duration: 150 } });
-      await next({ transform: 'rotate(0deg)', paddingLeft: 0, paddingTop: 0, config: { ...config.gentle, duration: 200 } });
+      await next({
+        transform: 'rotate(-2deg)', paddingLeft: 13, paddingTop: 2, config: { ...config.gentle, duration: 150 },
+      });
+      await next({
+        transform: 'rotate(0deg)', paddingLeft: 0, paddingTop: 0, config: { ...config.gentle, duration: 200 },
+      });
       ownProps.onRest();
     },
   }),
@@ -104,73 +117,68 @@ class Header extends Component {
       const { animateWave, animatePoke } = this.state;
 
       return (
-        <Container fluid style={style.container}>
+        <div style={style.container}>
+          <NightDay />
 
           {/* Greeting */}
-          <Row>
-            <Col style={style.greeting} className="xl">
-              Hello!&nbsp;
-              <Containers.wave
-                state={animateWave ? 'wave' : 'show'}
-                onRest={this.onEndWave}
-              >
-                {waveStyle => (
-                  <span>
-                    <Emoji
-                      onClick={this.onClickWave}
-                      symbol="👋"
-                      style={{ ...waveStyle, transformOrigin: 'center', position: 'absolute' }}
-                      label="wave"
-                    />
-                  </span>
-                )}
-              </Containers.wave>
-            </Col>
-          </Row>
+          <div style={style.greeting} className="xl">
+            Hello!&nbsp;
+            <Containers.wave
+              state={animateWave ? 'wave' : 'show'}
+              onRest={this.onEndWave}
+            >
+              {waveStyle => (
+                <span>
+                  <Emoji
+                    onClick={this.onClickWave}
+                    symbol="👋"
+                    style={{ ...waveStyle, transformOrigin: 'center', position: 'absolute' }}
+                    label="wave"
+                  />
+                </span>
+              )}
+            </Containers.wave>
+          </div>
 
           {/* Introduction */}
-          <Row>
-            <Col style={style.introduction} className="l">
-              {"I'm "}
-              <b>Isaiah Nields</b>
-              , a CS student with expertise in machine learning.
-              {" I'll "}
-              be a SWE Intern at Facebook for Summer 2019 👨‍💻
-            </Col>
-          </Row>
+          <div style={style.introduction} className="l">
+            {"I'm "}
+            <b>Isaiah Nields</b>
+            , a CS student with expertise in machine learning.
+            {" I'll "}
+            be a SWE Intern at Facebook for Summer 2019 👨‍💻
+          </div>
 
           {/* Contact */}
-          <Row>
-            <Col style={style.contact} className="m">
-              Get in touch
-              &nbsp;
-              <Containers.poke
-                state={animatePoke ? 'poke' : 'show'}
-                onRest={this.onEndPoke}
-              >
-                { pokeStyle => (
-                  <Emoji
-                    onClick={this.onClickPoke}
-                    style={pokeStyle}
-                    symbol=" 👉 "
-                    label="point-right"
-                  />
-                ) }
-              </Containers.poke>
-              &nbsp;
-              <a
-                className="m"
-                style={style.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                href="mailto:imnields@gmail.com"
-              >
-                imnields@gmail.com
-              </a>
-            </Col>
-          </Row>
+          <div style={style.contact} className="m">
+            Get in touch
+            &nbsp;
+            <Containers.poke
+              state={animatePoke ? 'poke' : 'show'}
+              onRest={this.onEndPoke}
+            >
+              { pokeStyle => (
+                <Emoji
+                  onClick={this.onClickPoke}
+                  style={pokeStyle}
+                  symbol=" 👉 "
+                  label="point-right"
+                />
+              ) }
+            </Containers.poke>
+            &nbsp;
+            <a
+              className="m"
+              style={style.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:imnields@gmail.com"
+            >
+              imnields@gmail.com
+            </a>
+          </div>
 
-        </Container>
+        </div>
       );
     }
 }

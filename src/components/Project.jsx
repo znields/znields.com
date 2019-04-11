@@ -1,35 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col, Container } from 'react-grid-system';
+import { Row, Col, Container } from 'react-bootstrap';
 import SmallLink from './SmallLink';
 import Chip from './Chip';
 
 const style = {
+  container: {
+    paddingBottom: '40px',
+  },
   icon: {
-    height: '30pt',
+    width: '25pt',
+    marginLeft: '12.5pt',
+    boxShadow: '0pt 0pt 1pt 0px',
+    borderRadius: '25pt',
   },
-  title: {
+  award: {
     fontWeight: 'bold',
-    height: '50pt',
-    fontSize: '15pt',
-    display: 'inline-block',
-    paddingTop: '13pt',
-    marginLeft: 10,
-  },
-  description: {
-    marginLeft: '15pt',
   },
 };
 
 function Project(props) {
   const {
-    icon, title, children, stack, href,
+    icon, title, children, stack, href, award,
   } = props;
 
   return (
-    <Container fluid style={{ align: 'left', width: '100%', marginBottom: '20px' }}>
-      <Row style={{ height: '40pt' }}>
-        <Col xl={0.9} lg={0.8} md={0.9} sm={1.1} xs={1.3} style={{ lineHeight: '60pt' }}>
+    <Container style={style.container}>
+      <Row>
+        <Col lg={0.1}>
           <img src={icon} style={style.icon} alt="icon" />
         </Col>
         <Col>
@@ -44,7 +42,12 @@ function Project(props) {
         </Col>
       </Row>
       <Row>
-        {stack.map(e => <Chip>{e}</Chip>)}
+        <Col style={style.award}>
+          {award}
+        </Col>
+      </Row>
+      <Row>
+        {stack.map(e => <Chip key={e}>{e}</Chip>)}
       </Row>
     </Container>
   );
@@ -56,6 +59,11 @@ Project.propTypes = {
   children: PropTypes.string.isRequired,
   stack: PropTypes.arrayOf(String).isRequired,
   href: PropTypes.string.isRequired,
+  award: PropTypes.string,
+};
+
+Project.defaultProps = {
+  award: '',
 };
 
 export default Project;

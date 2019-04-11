@@ -1,6 +1,6 @@
 import React from 'react';
 import { Keyframes } from 'react-spring/renderprops';
-import Emoji from '../components/Emoji';
+import Emoji from './Emoji';
 
 
 const Containers = {
@@ -33,20 +33,25 @@ class NightDay extends React.Component {
     };
 
     onClick = () => {
-      const {day} = this.state;
+      const { day } = this.state;
       document.body.style.backgroundColor = !day ? 'white' : '#171c28';
       document.body.style.color = !day ? 'black' : 'white';
 
-      console.log(document.getElementsByTagName('a'))
-
-
+      // set link background to correct color
       for (const a of document.getElementsByTagName('a')) {
         a.style.color = !day ? 'black' : 'white';
-        if (a.innerText !== 'imnields@gmail.com') a.style.boxShadow = !day ?  null: 'inset 0 -1.5px 0 0 white';
-
-        const newState = { ...this.state, day: !day };
-        this.setState(newState);
+        if (a.innerText !== 'imnields@gmail.com' && a.innerText !== '🔗'
+          && a.className !== 'social-icon'
+          && a.getAttribute('role') !== 'tab') a.style.boxShadow = !day ? null : 'inset 0 -1.5px 0 0 white';
       }
+
+      // set writing borders to correct color
+      for (const card of document.getElementsByClassName('card')) {
+        card.style.border = day ? '1px solid white' : '1px solid black';
+      }
+
+      const newState = { ...this.state, day: !day };
+      this.setState(newState);
     };
 
     render() {

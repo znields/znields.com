@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function SmallLink(props) {
   const { href, children } = props;
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+    <a href={href} className="small-link" target="_blank" rel="noopener noreferrer">{children}</a>
   );
 }
 

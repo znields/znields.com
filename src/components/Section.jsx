@@ -1,24 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col, Container } from 'react-grid-system';
+import { Row, Col, Container } from 'react-bootstrap';
 
 const style = {
   container: {
-    margin: 0,
-    paddingBottom: 40,
-    paddingLeft: '5vw',
+    paddingBottom: '70px',
   },
   title: {
     color: '#007bff',
     fontWeight: 'bold',
     letterSpacing: 2,
     fontSize: '16pt',
-    paddingBottom: 20,
+    marginBottom: '20px',
   },
   content: {
+    lineHeight: '25pt',
     fontSize: '13pt',
-    lineHeight: '22pt',
-    paddingLeft: '5.5vw',
   },
 };
 
@@ -27,10 +24,10 @@ function Section(props) {
   return (
     <Container style={style.container}>
       <Row>
-        <Col lg={2} md={3} style={style.title}>
+        <Col lg={2} style={style.title}>
           {title}
         </Col>
-        <Col lg={8} md={9} style={style.content}>
+        <Col lg={10} style={style.content}>
           {children}
         </Col>
       </Row>

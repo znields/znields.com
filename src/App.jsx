@@ -1,16 +1,16 @@
 import React from 'react';
 import Header from './containers/Header';
 import Body from './containers/Body';
-import NightDay from './containers/NightDay';
+import Footer from './containers/Footer';
 
 import './App.css';
 
 function App() {
   return (
     <div>
-      <NightDay />
       <Header />
       <Body />
+      <Footer />
     </div>
   );
 }
