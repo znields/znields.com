@@ -17,6 +17,13 @@ const style = {
   award: {
     fontWeight: 'bold',
     fontSize: '11pt',
+    marginLeft: '5px',
+  },
+  chips: {
+    marginLeft: '0px',
+  },
+  children: {
+    marginLeft: '5px',
   },
 };
 
@@ -38,7 +45,7 @@ function Project(props) {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col style={style.children}>
           {children}
         </Col>
       </Row>
@@ -47,7 +54,7 @@ function Project(props) {
           {award}
         </Col>
       </Row>
-      <Row>
+      <Row style={style.chips}>
         {stack.map(e => <Chip key={e}>{e}</Chip>)}
       </Row>
     </Container>

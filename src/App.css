@@ -74,7 +74,7 @@ a:hover.m {
 }
 
 :root {
-    --base-size: 50px
+    --base-size: 45px
 }
 
 .xl {
@@ -96,6 +96,54 @@ a:hover.m {
 .xs {
     font-size: calc(var(--base-size) * 0.3);
 }
+
+/*vertical fonts*/
+
+@media only screen and (max-height: 550px) {
+    .xl {
+        font-size: calc(var(--base-size) * 1.0 * 0.8);
+    }
+
+    .l {
+        font-size: calc(var(--base-size) * 0.75  * 0.8);
+    }
+
+    .m {
+        font-size: calc(var(--base-size) * 0.55  * 0.8);
+    }
+
+    .s {
+        font-size: calc(var(--base-size) * 0.40  * 0.8);
+    }
+
+    .xs {
+        font-size: calc(var(--base-size) * 0.3  * 0.8);
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .xl {
+        font-size: calc(var(--base-size) * 1.0 * 0.7);
+    }
+
+    .l {
+        font-size: calc(var(--base-size) * 0.75  * 0.7);
+    }
+
+    .m {
+        font-size: calc(var(--base-size) * 0.55  * 0.7);
+    }
+
+    .s {
+        font-size: calc(var(--base-size) * 0.40  * 0.7);
+    }
+
+    .xs {
+        font-size: calc(var(--base-size) * 0.3  * 0.7);
+    }
+}
+
+/*horizontal fonts*/
 
 @media only screen and (max-width: 800px) {
     .xl {
@@ -165,6 +213,28 @@ a:hover.m {
 
 @media only screen and (max-width: 450px) {
     .xl {
+        font-size: calc(var(--base-size) * 1.0 * 0.65);
+    }
+
+    .l {
+        font-size: calc(var(--base-size) * 0.75  * 0.65);
+    }
+
+    .m {
+        font-size: calc(var(--base-size) * 0.55  * 0.65);
+    }
+
+    .s {
+        font-size: calc(var(--base-size) * 0.40  * 0.65);
+    }
+
+    .xs {
+        font-size: calc(var(--base-size) * 0.3  * 0.65);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .xl {
         font-size: calc(var(--base-size) * 1.0 * 0.6);
     }
 
@@ -185,7 +255,7 @@ a:hover.m {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 350px) {
     .xl {
         font-size: calc(var(--base-size) * 1.0 * 0.55);
     }
@@ -204,27 +274,5 @@ a:hover.m {
 
     .xs {
         font-size: calc(var(--base-size) * 0.3  * 0.55);
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    .xl {
-        font-size: calc(var(--base-size) * 1.0 * 0.5);
-    }
-
-    .l {
-        font-size: calc(var(--base-size) * 0.75  * 0.5);
-    }
-
-    .m {
-        font-size: calc(var(--base-size) * 0.55  * 0.5);
-    }
-
-    .s {
-        font-size: calc(var(--base-size) * 0.40  * 0.5);
-    }
-
-    .xs {
-        font-size: calc(var(--base-size) * 0.3  * 0.5);
     }
 }

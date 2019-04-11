@@ -9,7 +9,7 @@ import List from '../components/List';
 
 const style = {
   marginLeft: '6vw',
-  marginRight: '5vw',
+  marginRight: '15vw',
 };
 
 function Body() {
