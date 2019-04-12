@@ -3,6 +3,8 @@ import {
   Tab, Row, Col, Nav,
 } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { observer } from 'mobx-react';
+import dayStore from '../store/day';
 
 const style = {
   date: {
@@ -16,11 +18,8 @@ const style = {
     whiteSpace: 'nowrap',
   },
   company: {
-    color: 'black',
-    // fontWeight: 'bold',
+    fontWeight: 'bold',
     borderRadius: '0',
-    backgroundColor: 'inherit',
-    // marginLeft: '1px',
   },
 };
 
@@ -38,6 +37,10 @@ class ControlledTabs extends React.Component {
   render() {
     const { jobs } = this.props;
     const { key } = this.state;
+    const { day } = dayStore;
+    let color = day ? 'black' : 'white';
+    let backgroundColor = day ? 'lightgrey' : 'rgb(0, 123, 255)';
+
     return (
       <Tab.Container defaultActiveKey={key}>
         <Row>
@@ -45,7 +48,7 @@ class ControlledTabs extends React.Component {
             <Nav className="flex-column">
               { jobs.map(job => (
                 <Nav.Item key={job.company} onClick={() => { this.setState({ key: job.company }); }}>
-                  <Nav.Link eventKey={job.company} style={{ ...style.company, backgroundColor: key === job.company ? 'lightgrey' : 'white', borderRadius: '20px'}}>
+                  <Nav.Link eventKey={job.company} style={{ ...style.company, backgroundColor: key === job.company ? backgroundColor : 'inherit', borderRadius: '20px', color }}>
                     {job.company}
                   </Nav.Link>
                 </Nav.Item>
@@ -83,4 +86,4 @@ ControlledTabs.propTypes = {
   jobs: PropTypes.arrayOf(Object).isRequired,
 };
 
-export default ControlledTabs;
+export default observer(ControlledTabs);
