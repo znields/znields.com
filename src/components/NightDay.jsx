@@ -35,29 +35,58 @@ const Containers = {
 class NightDay extends React.Component {
     onClick = () => {
       dayStore.day = !dayStore.day;
-      console.log("DONT")
+      console.log('DONT');
     };
 
     render() {
       const { day } = dayStore;
       return (
-        <div style={{ position: 'absolute', top: '2.5vh', right: '15vw', verticalAlign: 'middle', display: 'table-cell', textAlign: 'center' }}>
+        <div style={{
+          position: 'absolute', top: '2.5vh', right: '15vw', verticalAlign: 'middle', display: 'table-cell', textAlign: 'center',
+        }}
+        >
           <div style={{ width: '10vw', height: '20vh', position: 'relative' }}>
-            <div role="button" className="xl" onClick={this.onClick} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 50 }}>
+            <div
+              role="button"
+              className="xl"
+              onClick={this.onClick}
+              style={{
+                position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 50,
+              }}
+            >
               {day ? '☀️' : '🌕'}
             </div>
           </div>
           <Containers.center state="spin">
             { centerStyle => (
               <div style={{
-                zIndex: 0, width: '10vw', height: '20vh', position: 'absolute', top: '3vh', right: '3vw', ...centerStyle,
+                ...centerStyle,
+                zIndex: 0,
+                width: '10vw',
+                height: '20vh',
+                position: 'absolute',
+                top: '3vh',
+                right: '3vw',
               }}
               >
                 { day ? (
                   <Containers.earth state="spin" style={{ textAlign: 'center', verticalAlign: 'middle' }}>
                     { earthStyle => (
-                      <div align="center" style={{ ...earthStyle, position: 'absolute', fontSize: null, zIndex: 0, width: '50px', display: 'inline-block' }} className="s">
-                        {"🌎"}
+                      <div
+                        style={{
+                          ...earthStyle,
+                          position: 'absolute',
+                          zIndex: 0,
+                          display: 'inline-block',
+                          transformOrigin: '20px 20px',
+                          width: '40px',
+                          height: '40px',
+                          textAlign: 'center',
+                          lineHeight: '40px',
+                        }}
+                        className="s"
+                      >
+                        {'🌎'}
                       </div>
                     )}
                   </Containers.earth>
