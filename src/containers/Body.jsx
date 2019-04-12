@@ -16,12 +16,15 @@ function Body() {
   return (
     <div style={style}>
       <Section title="About Me">
-        {"I'm a 2nd-year computer science undergrad at the "}
-        <SmallLink href="http://www.ufl.edu/">University of Florida</SmallLink>
-        {". While I'm not big on going to class, I enjoy learning through my personal projects. "}
-        {' For my projects, I focus on simplicity, efficiency, and utility. '}
-
-        {"When I'm not in in front of a computer, I enjoy playing basketball and reading."}
+        <p>
+          {"I'm a 2nd-year computer science undergrad at the "}
+          <SmallLink href="http://www.ufl.edu/">University of Florida</SmallLink>
+          {". While I'm not big on going to class, I enjoy learning through my personal projects. "}
+          {' For my projects, I focus on simplicity, efficiency, and utility. '}
+        </p>
+        <p>
+          {"When I'm not in in front of a computer, I enjoy playing basketball and reading."}
+        </p>
 
 
       </Section>
@@ -149,14 +152,14 @@ function Body() {
                 date="Feb 1, 2019"
               />
             </Col>
-            {/*<Col>*/}
-            {/*  <Paper*/}
-            {/*    title="DeepTrash @ MakeHarvard 2019"*/}
-            {/*    img="https://cdn-images-1.medium.com/max/800/1*DBhJOOcWXUiVjZaYfExWSQ.gif"*/}
-            {/*    link="https://medium.com/@isaiahnields/deeptrash-makeharvard-2019-aa0a9cf0b68b"*/}
-            {/*    date="Feb 6, 2019"*/}
-            {/*  />*/}
-            {/*</Col>*/}
+            {/* <Col> */}
+            {/*  <Paper */}
+            {/*    title="DeepTrash @ MakeHarvard 2019" */}
+            {/*    img="https://cdn-images-1.medium.com/max/800/1*DBhJOOcWXUiVjZaYfExWSQ.gif" */}
+            {/*    link="https://medium.com/@isaiahnields/deeptrash-makeharvard-2019-aa0a9cf0b68b" */}
+            {/*    date="Feb 6, 2019" */}
+            {/*  /> */}
+            {/* </Col> */}
           </Row>
         </Container>
 

@@ -13,6 +13,7 @@ const style = {
     height: '20pt',
     marginRight: '10px',
     boxShadow: '0px',
+    marginBottom: '10px',
   },
 };
 

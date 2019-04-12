@@ -20,7 +20,7 @@ const Containers = {
     spin: async (next) => {
       while (true) {
         await next({ transform: 'rotate(0deg)', config: { easing: t => t, duration: 0 } });
-        await next({ transform: 'rotate(13140deg)', config: { easing: t => t, duration: 10000 } });
+        await next({ transform: 'rotate(5000deg)', config: { easing: t => t, duration: 10000 } });
       }
     },
   }),
@@ -35,50 +35,43 @@ const Containers = {
 class NightDay extends React.Component {
     onClick = () => {
       dayStore.day = !dayStore.day;
+      console.log("DONT")
     };
 
     render() {
       const { day } = dayStore;
       return (
-        <div style={{ top: '5.0vh', right: '7.0vw', position: 'absolute' }}>
-          <Emoji
-            className="l"
-            style={{
-              fontSize: null, zIndex: 50, userSelect: 'none', position: 'relative',
-            }}
-            symbol={day ? '☀️' : '🌑'}
-            onClick={this.onClick}
-          />
+        <div style={{ position: 'absolute', top: '2.5vh', right: '15vw', verticalAlign: 'middle', display: 'table-cell', textAlign: 'center' }}>
+          <div style={{ width: '10vw', height: '20vh', position: 'relative' }}>
+            <div role="button" className="xl" onClick={this.onClick} style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 50 }}>
+              {day ? '☀️' : '🌕'}
+            </div>
+          </div>
           <Containers.center state="spin">
             { centerStyle => (
-              <span style={{
-                ...centerStyle, paddingLeft: '5.0vh', marginLeft: -30, zIndex: 0, marginTop: 20, position: 'absolute', transformOrigin: 'left',
+              <div style={{
+                zIndex: 0, width: '10vw', height: '20vh', position: 'absolute', top: '3vh', right: '3vw', ...centerStyle,
               }}
               >
                 { day ? (
-                  <Containers.earth state="spin">
+                  <Containers.earth state="spin" style={{ textAlign: 'center', verticalAlign: 'middle' }}>
                     { earthStyle => (
-                      <span>
-                        <Emoji
-                          className="xs"
-                          style={{
-                            ...earthStyle, fontSize: null,
-                          }}
-                          symbol="🌎"
-                        />
-                      </span>
+                      <div align="center" style={{ ...earthStyle, position: 'absolute', fontSize: null, zIndex: 0, width: '50px', display: 'inline-block' }} className="s">
+                        {"🌎"}
+                      </div>
                     )}
                   </Containers.earth>
                 )
                   : (
-                    <Emoji
-                      class="xs"
-                      style={{ transform: 'rotate(180deg)', pointerEvents: 'none' }}
-                      symbol="🚀️"
-                    />
+                    <div
+                      className="s"
+                      style={{ transform: 'rotate(60deg)', pointerEvents: 'none', position: 'absolute' }}
+                    >
+                      {'🚀️'}
+                    </div>
 
                   )}
-              </span>
+              </div>
             ) }
           </Containers.center>
         </div>
