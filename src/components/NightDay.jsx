@@ -52,7 +52,7 @@ class NightDay extends React.Component {
                 position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 50,
               }}
             >
-              {day ? '🌎' : '🌌'}
+              {day ? '🌎' : '🌀'}
             </div>
           </div>
           <Containers.center state="spin">
