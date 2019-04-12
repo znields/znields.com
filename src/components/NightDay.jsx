@@ -1,7 +1,6 @@
 import React from 'react';
 import { Keyframes } from 'react-spring/renderprops';
 import { observer } from 'mobx-react';
-import Emoji from './Emoji';
 import dayStore from '../store/day';
 
 
