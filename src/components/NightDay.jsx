@@ -46,14 +46,13 @@ class NightDay extends React.Component {
         >
           <div style={{ width: '10vw', height: '20vh', position: 'relative' }}>
             <div
-              role="button"
               className="xl"
               onClick={this.onClick}
               style={{
                 position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 50,
               }}
             >
-              {day ? '☀️' : '🌕'}
+              {day ? '🌎' : '🌌'}
             </div>
           </div>
           <Containers.center state="spin">
@@ -69,33 +68,20 @@ class NightDay extends React.Component {
               }}
               >
                 { day ? (
-                  <Containers.earth state="spin" style={{ textAlign: 'center', verticalAlign: 'middle' }}>
-                    { earthStyle => (
-                      <div
-                        style={{
-                          ...earthStyle,
-                          position: 'absolute',
-                          zIndex: 0,
-                          display: 'inline-block',
-                          transformOrigin: '20px 20px',
-                          width: '40px',
-                          height: '40px',
-                          textAlign: 'center',
-                          lineHeight: '40px',
-                        }}
-                        className="s"
-                      >
-                        {'🌎'}
-                      </div>
-                    )}
-                  </Containers.earth>
+
+                  <div
+                    style={{ transform: 'rotate(60deg)', pointerEvents: 'none', position: 'absolute' }}
+                    className="s"
+                  >
+                    {'🚀'}
+                  </div>
                 )
                   : (
                     <div
-                      className="s"
-                      style={{ transform: 'rotate(60deg)', pointerEvents: 'none', position: 'absolute' }}
+                      className="m"
+                      style={{ transform: 'rotate(200deg)', pointerEvents: 'none', position: 'absolute' }}
                     >
-                      {'🚀️'}
+                      {'🌠️'}
                     </div>
 
                   )}
