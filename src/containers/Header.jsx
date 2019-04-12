@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Keyframes, config, Spring } from 'react-spring/renderprops';
 import { observer } from 'mobx-react';
-import PropTypes from 'prop-types';
+import dayStore from '../store/day';
 import Emoji from '../components/Emoji';
 import NightDay from '../components/NightDay';
 
@@ -122,7 +122,6 @@ class Header extends Component {
 
     render() {
       const { animateWave, animatePoke, linkHovered } = this.state;
-      const { dayStore } = this.props;
       const { day } = dayStore;
       let emailColor;
 
@@ -138,7 +137,7 @@ class Header extends Component {
 
       return (
         <div style={style.container}>
-          <NightDay dayStore={dayStore} />
+          <NightDay />
 
           {/* Greeting */}
           <div style={style.greeting} className="xl">
@@ -210,9 +209,5 @@ class Header extends Component {
       );
     }
 }
-
-Header.propTypes = {
-  dayStore: PropTypes.objectOf(Boolean).isRequired,
-};
 
 export default observer(Header);

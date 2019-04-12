@@ -1,10 +1,10 @@
 import React from 'react';
 import { Spring } from 'react-spring/renderprops';
 import { observer } from 'mobx-react';
-import PropTypes from 'prop-types';
 import Header from './containers/Header';
 import Body from './containers/Body';
 import Footer from './containers/Footer';
+import dayStore from './store/day';
 import './App.css';
 
 
@@ -18,18 +18,18 @@ const style = {
 };
 
 
-function App(props) {
-  const { dayStore } = props;
+function App() {
+  const { day } = dayStore;
   return (
     <Spring
       to={{
-        backgroundColor: dayStore.day ? 'white' : '#171c28',
-        color: dayStore.day ? 'black' : 'white',
+        backgroundColor: day ? 'white' : '#171c28',
+        color: day ? 'black' : 'white',
       }}
     >
       { bodyStyle => (
         <div style={{ ...bodyStyle, ...style }}>
-          <Header dayStore={dayStore} />
+          <Header />
           <Body />
           <Footer />
         </div>
@@ -38,9 +38,5 @@ function App(props) {
     </Spring>
   );
 }
-
-App.propTypes = {
-  dayStore: PropTypes.objectOf(Boolean).isRequired,
-};
 
 export default observer(App);

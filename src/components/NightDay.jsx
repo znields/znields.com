@@ -1,8 +1,8 @@
 import React from 'react';
 import { Keyframes } from 'react-spring/renderprops';
 import { observer } from 'mobx-react';
-import PropTypes from 'prop-types';
 import Emoji from './Emoji';
+import dayStore from '../store/day';
 
 
 const Containers = {
@@ -34,12 +34,10 @@ const Containers = {
 
 class NightDay extends React.Component {
     onClick = () => {
-      const { dayStore } = this.props;
       dayStore.day = !dayStore.day;
     };
 
     render() {
-      const { dayStore } = this.props;
       const { day } = dayStore;
       return (
         <div style={{ top: '5.0vh', right: '7.0vw', position: 'absolute' }}>
@@ -87,9 +85,5 @@ class NightDay extends React.Component {
       );
     }
 }
-
-NightDay.propTypes = {
-  dayStore: PropTypes.objectOf(Boolean).isRequired,
-};
 
 export default observer(NightDay);
