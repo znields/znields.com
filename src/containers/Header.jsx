@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Keyframes, config } from 'react-spring/renderprops';
+import { Keyframes, config, Spring } from 'react-spring/renderprops';
+import { observer } from 'mobx-react';
+import PropTypes from 'prop-types';
 import Emoji from '../components/Emoji';
 import NightDay from '../components/NightDay';
-
 
 const style = {
   container: {
@@ -19,7 +20,7 @@ const style = {
   introduction: {
     position: 'absolute',
     left: '10vw',
-    top: '35vh',
+    top: '40vh',
     maxWidth: 700,
     letterSpacing: 1,
     lineHeight: 1.9,
@@ -29,6 +30,9 @@ const style = {
     position: 'absolute',
     left: '10vw',
     top: '85vh',
+  },
+  email: {
+    textDecoration: 'none',
   },
 };
 
@@ -77,21 +81,13 @@ const Containers = {
       ownProps.onRest();
     },
   }),
-  link: Keyframes.Spring({
-    show: { opacity: 1 },
-    poke: async (next, cancel, ownProps) => {
-      await next({ paddingLeft: 0, paddingRight: 0, config: { easing: t => t, duration: 100 } });
-      await next({ paddingLeft: 10, paddingRight: 0, config: { easing: t => t, duration: 100 } });
-      await next({ paddingLeft: 0, paddingRight: 0, config: { easing: t => t, duration: 100 } });
-      ownProps.onRest();
-    },
-  }),
 };
 
 class Header extends Component {
     state = {
       animateWave: true,
       animatePoke: false,
+      linkHovered: false,
     };
 
     onClickWave = () => {
@@ -114,12 +110,35 @@ class Header extends Component {
       this.setState(newState);
     };
 
+    onHoverLink = () => {
+      const newState = { ...this.state, linkHovered: true };
+      this.setState(newState);
+    };
+
+    onCancelHoverLink = () => {
+      const newState = { ...this.state, linkHovered: false };
+      this.setState(newState);
+    };
+
     render() {
-      const { animateWave, animatePoke } = this.state;
+      const { animateWave, animatePoke, linkHovered } = this.state;
+      const { dayStore } = this.props;
+      const { day } = dayStore;
+      let emailColor;
+
+      if (day && linkHovered) {
+        emailColor = 'white';
+      } else if (!day && linkHovered) {
+        emailColor = 'white';
+      } else if (day && !linkHovered) {
+        emailColor = 'black';
+      } else {
+        emailColor = 'white';
+      }
 
       return (
         <div style={style.container}>
-          <NightDay />
+          <NightDay dayStore={dayStore} />
 
           {/* Greeting */}
           <div style={style.greeting} className="xl">
@@ -168,15 +187,23 @@ class Header extends Component {
               ) }
             </Containers.poke>
             &nbsp;
-            <a
-              className="m"
-              style={style.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              href="mailto:imnields@gmail.com"
+            <Spring
+              to={{
+                boxShadow: `inset 0 ${linkHovered ? '-40px' : '-3px'} 0 #007bff`,
+                color: emailColor,
+              }}
             >
-              imnields@gmail.com
-            </a>
+              { emailStyle => (
+                <a
+                  onMouseOver={this.onHoverLink}
+                  onMouseOut={this.onCancelHoverLink}
+                  style={{ ...emailStyle, ...style.email }}
+                  href="mailto:imnields@gmail.com"
+                >
+                imnields@gmail.com
+                </a>
+              ) }
+            </Spring>
           </div>
 
         </div>
@@ -184,4 +211,8 @@ class Header extends Component {
     }
 }
 
-export default Header;
+Header.propTypes = {
+  dayStore: PropTypes.objectOf(Boolean).isRequired,
+};
+
+export default observer(Header);

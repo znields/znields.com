@@ -1,5 +1,7 @@
 import React from 'react';
 import { Keyframes } from 'react-spring/renderprops';
+import { observer } from 'mobx-react';
+import PropTypes from 'prop-types';
 import Emoji from './Emoji';
 
 
@@ -25,69 +27,55 @@ const Containers = {
   comet: Keyframes.Spring({
     show: { opacity: 1 },
     spin: async (next) => {
-      await next({ transform: 'rotate(180deg)', config: { easing: t => t, duration: 0 } })
+      await next({ transform: 'rotate(180deg)', config: { easing: t => t, duration: 0 } });
     },
   }),
 };
 
 class NightDay extends React.Component {
-    state = {
-      day: true,
-    };
-
     onClick = () => {
-      const { day } = this.state;
-      document.body.style.backgroundColor = !day ? 'white' : '#171c28';
-      document.body.style.color = !day ? 'black' : 'white';
-
-      // set link background to correct color
-      for (const a of document.getElementsByTagName('a')) {
-        a.style.color = !day ? 'black' : 'white';
-        if (a.innerText !== 'imnields@gmail.com' && a.innerText !== '🔗'
-          && a.className !== 'social-icon'
-          && a.getAttribute('role') !== 'tab') a.style.boxShadow = !day ? null : 'inset 0 -1.5px 0 0 white';
-
-        if (a.getAttribute('role') === 'tab') a.style.border = day ? '' : '';
-      }
-
-      // set writing borders to correct color
-      for (const card of document.getElementsByClassName('card')) {
-        card.style.border = day ? '1px solid white' : '1px solid black';
-      }
-
-      const newState = { ...this.state, day: !day };
-      this.setState(newState);
+      const { dayStore } = this.props;
+      dayStore.day = !dayStore.day;
     };
 
     render() {
-      const { day } = this.state;
-
+      const { dayStore } = this.props;
+      const { day } = dayStore;
       return (
         <div style={{ top: '5.0vh', right: '7.0vw', position: 'absolute' }}>
-          <Emoji className="l" style={{ fontSize: null, zIndex: -1, userSelect: 'none' }} symbol={day ? '☀️' : '🌑'} onClick={this.onClick} />
+          <Emoji
+            className="l"
+            style={{
+              fontSize: null, zIndex: 50, userSelect: 'none', position: 'relative',
+            }}
+            symbol={day ? '☀️' : '🌑'}
+            onClick={this.onClick}
+          />
           <Containers.center state="spin">
             { centerStyle => (
               <span style={{
-                ...centerStyle, paddingLeft: '5.0vh', marginLeft: -30, marginTop: 20, position: 'absolute', zIndex: -1, transformOrigin: 'left',
+                ...centerStyle, paddingLeft: '5.0vh', marginLeft: -30, zIndex: 0, marginTop: 20, position: 'absolute', transformOrigin: 'left',
               }}
               >
                 { day ? (
                   <Containers.earth state="spin">
                     { earthStyle => (
-                      <Emoji
-                        className="xs"
-                        style={{
-                          ...earthStyle, fontSize: null, lineHeight: 0, lineWidth: 0,
-                        }}
-                        symbol="🌎"
-                      />
+                      <span>
+                        <Emoji
+                          className="xs"
+                          style={{
+                            ...earthStyle, fontSize: null,
+                          }}
+                          symbol="🌎"
+                        />
+                      </span>
                     )}
                   </Containers.earth>
                 )
                   : (
                     <Emoji
                       class="xs"
-                      style={{ transform: 'rotate(180deg)' }}
+                      style={{ transform: 'rotate(180deg)', pointerEvents: 'none' }}
                       symbol="🚀️"
                     />
 
@@ -100,4 +88,8 @@ class NightDay extends React.Component {
     }
 }
 
-export default NightDay;
+NightDay.propTypes = {
+  dayStore: PropTypes.objectOf(Boolean).isRequired,
+};
+
+export default observer(NightDay);
