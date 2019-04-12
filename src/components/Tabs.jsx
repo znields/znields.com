@@ -15,6 +15,13 @@ const style = {
     fontSie: '10pt',
     whiteSpace: 'nowrap',
   },
+  company: {
+    color: 'black',
+    // fontWeight: 'bold',
+    borderRadius: '0',
+    backgroundColor: 'inherit',
+    // marginLeft: '1px',
+  },
 };
 
 class ControlledTabs extends React.Component {
@@ -34,11 +41,11 @@ class ControlledTabs extends React.Component {
     return (
       <Tab.Container defaultActiveKey={key}>
         <Row>
-          <Col sm={3} style={{ marginRight: '10px', marginBottom: '10px' }}>
-            <Nav variant="pills" className="flex-column">
+          <Col sm={3} style={{ marginRight: '10px', marginBottom: '10px', paddingLeft: '10px' }}>
+            <Nav className="flex-column">
               { jobs.map(job => (
-                <Nav.Item key={job.company}>
-                  <Nav.Link eventKey={job.company}>
+                <Nav.Item key={job.company} onClick={() => { this.setState({ key: job.company }); }}>
+                  <Nav.Link eventKey={job.company} style={{ ...style.company, backgroundColor: key === job.company ? 'lightgrey' : 'white', borderRadius: '20px'}}>
                     {job.company}
                   </Nav.Link>
                 </Nav.Item>

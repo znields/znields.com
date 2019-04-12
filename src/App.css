@@ -2,24 +2,6 @@
     background: #ffe57f;
 }
 
-.nav-pills .nav-link:not(.active) {
-    border: solid white;
-    color: #0087fa;
-    border-radius: 0;
-    border-width: 0 0 0 3px;
-    background-color: inherit;
-    margin-left: 1px;
-}
-
-.nav-pills .nav-link.active {
-    background-color: inherit;
-    color: #0087fa;
-    border: solid #0087fa;
-    border-radius: 0;
-    border-width: 0 0 0 3px;
-    margin-left: 1px;
-}
-
 :root {
     --base-size: 45px
 }
