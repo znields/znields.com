@@ -38,8 +38,8 @@ class ControlledTabs extends React.Component {
     const { jobs } = this.props;
     const { key } = this.state;
     const { day } = dayStore;
-    let color = day ? 'black' : 'white';
-    let backgroundColor = day ? 'lightgrey' : 'rgb(0, 123, 255)';
+    const color = day ? 'black' : 'white';
+    const backgroundColor = day ? 'lightgrey' : 'rgb(0, 123, 255)';
 
     return (
       <Tab.Container defaultActiveKey={key}>
