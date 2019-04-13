@@ -6,6 +6,11 @@ import SmallLink from '../components/SmallLink';
 import Project from '../components/Project';
 import Paper from '../components/Paper';
 import List from '../components/List';
+import Emoji from '../components/Emoji';
+
+import secondPlace from '../assets/second-place.png';
+import trophy from '../assets/trophy.png';
+import cloud from '../assets/cloud.png';
 
 const style = {
   marginLeft: '6vw',
@@ -36,7 +41,13 @@ function Body() {
             icon="https://raw.githubusercontent.com/isaiahnields/deep-trash/master/icon.png"
             stack={['Keras', 'Tensorflow', 'Python', 'Arduino', 'Raspberry Pi']}
             href="https://github.com/isaiahnields/deep-trash"
-            award="🏆 1st Place - MakeHarvard 2019 🏆"
+            award={(
+              <span>
+                <Emoji src={trophy} style={{ width: '13pt', height: '13pt' }} />
+                &nbsp;1st Place - MakeHarvard 2019&nbsp;
+                <Emoji src={trophy} style={{ width: '13pt', height: '13pt' }} />
+              </span>
+)}
           >
             An intelligent trashcan that automatically sorts your waste for you
           </Project>
@@ -46,7 +57,13 @@ function Body() {
             title="Danger.ai"
             stack={['OpenPose', 'Python', 'JavaScript', 'HTML', 'CSS', 'Google Cloud Platform']}
             href="https://github.com/isaiahnields/danger.ai"
-            award="🥈 2nd Place - SwampHacks V 🥈"
+            award={(
+              <span>
+                <Emoji src={secondPlace} style={{ width: '13pt', height: '13pt' }} />
+                  &nbsp;2nd Place - SwampHacks V&nbsp;
+                <Emoji src={secondPlace} style={{ width: '13pt', height: '13pt' }} />
+              </span>
+)}
           >
             A video monitoring system powered by deep learning
           </Project>
@@ -65,7 +82,13 @@ function Body() {
             title="CSV to SQLite"
             stack={['Electron', 'JavaScript', 'HTML', 'CSS', 'SQLite', 'Material UI']}
             href="https://github.com/isaiahnields/csv-to-sqlite"
-            award="☁️ 950+ downloads ☁️"
+            award={(
+              <span>
+                <Emoji src={cloud} style={{ width: '13pt', height: '13pt' }} />
+                &nbsp;950+ downloads&nbsp;
+                <Emoji src={cloud} style={{ width: '13pt', height: '13pt' }} />
+              </span>
+)}
           >
             A desktop app to convert CSV files to SQLite databases
           </Project>
