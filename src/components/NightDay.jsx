@@ -2,6 +2,12 @@ import React from 'react';
 import { Keyframes } from 'react-spring/renderprops';
 import { observer } from 'mobx-react';
 import dayStore from '../store/day';
+import Emoji from './Emoji';
+
+import earth from '../assets/earth.png';
+import galaxy from '../assets/galaxy.png';
+import rocket from '../assets/rocket.png';
+import star from '../assets/star.png';
 
 
 const Containers = {
@@ -34,7 +40,6 @@ const Containers = {
 class NightDay extends React.Component {
     onClick = () => {
       dayStore.day = !dayStore.day;
-      console.log('DONT');
     };
 
     render() {
@@ -45,15 +50,14 @@ class NightDay extends React.Component {
         }}
         >
           <div style={{ width: '10vw', height: '20vh', position: 'relative' }}>
-            <div
+            <Emoji
               className="xl"
-              onClick={this.onClick}
+              src={day ? earth : galaxy}
               style={{
                 position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 50,
               }}
-            >
-              {day ? '🌎' : '🌀'}
-            </div>
+              onClick={this.onClick}
+            />
           </div>
           <Containers.center state="spin">
             { centerStyle => (
@@ -63,30 +67,17 @@ class NightDay extends React.Component {
                 width: '10vw',
                 height: '20vh',
                 position: 'absolute',
-                top: '3vh',
-                right: '3vw',
+                top: '1vh',
+                right: '1vw',
               }}
               >
-                { day ? (
-
-                  <div
-                    style={{ transform: 'rotate(60deg)', pointerEvents: 'none', position: 'absolute' }}
-                    className="s"
-                  >
-                    {'🚀'}
-                  </div>
-                )
-                  : (
-                    <div
-                      className="m"
-                      style={{ transform: 'rotate(200deg)', pointerEvents: 'none', position: 'absolute' }}
-                    >
-                      {'🌠️'}
-                    </div>
-
-                  )}
+                <Emoji
+                  src={day ? rocket : star}
+                  className={day ? 's' : 'm'}
+                  style={{ transform: `rotate(${day ? 60 : 250}deg)`, pointerEvents: 'none', position: 'absolute' }}
+                />
               </div>
-            ) }
+            )}
           </Containers.center>
         </div>
       );

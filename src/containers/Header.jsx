@@ -5,6 +5,10 @@ import dayStore from '../store/day';
 import Emoji from '../components/Emoji';
 import NightDay from '../components/NightDay';
 
+import wave from '../assets/wave.png';
+import point from '../assets/point.png';
+import technologist from '../assets/technologist.png';
+
 const style = {
   container: {
     height: '100vh',
@@ -16,6 +20,7 @@ const style = {
     left: '10vw',
     top: '15vh',
     letterSpacing: 1,
+    lineHeight: 1,
   },
   introduction: {
     position: 'absolute',
@@ -43,31 +48,31 @@ const Containers = {
       await next({ transform: 'rotate(0deg)', paddingTop: 0, paddingLeft: 0 });
       // wave 1
       await next({
-        transform: 'rotate(-10deg)', paddingLeft: 0, paddingTop: 15, config: { ...config.gentle, duration: 150 },
+        transform: 'rotate(-10deg)', marginLeft: 0, marginTop: 15, config: { ...config.gentle, duration: 150 },
       });
       await next({
-        transform: 'rotate(0deg)', paddingLeft: 19, paddingTop: 0, config: { ...config.gentle, duration: 150 },
+        transform: 'rotate(0deg)', marginLeft: 19, marginTop: 0, config: { ...config.gentle, duration: 150 },
       });
       // wave 2
       await next({
-        transform: 'rotate(-10deg)', paddingLeft: 0, paddingTop: 15, config: { ...config.gentle, duration: 200 },
+        transform: 'rotate(-10deg)', marginLeft: 0, marginTop: 15, config: { ...config.gentle, duration: 200 },
       });
       await next({
-        transform: 'rotate(0deg)', paddingLeft: 16, paddingTop: 0, config: { ...config.gentle, duration: 200 },
+        transform: 'rotate(0deg)', marginLeft: 16, marginTop: 0, config: { ...config.gentle, duration: 200 },
       });
       // wave 3
       await next({
-        transform: 'rotate(-10deg)', paddingLeft: 0, paddingTop: 15, config: { ...config.gentle, duration: 200 },
+        transform: 'rotate(-10deg)', marginLeft: 0, marginTop: 15, config: { ...config.gentle, duration: 200 },
       });
       await next({
-        transform: 'rotate(0deg)', paddingLeft: 16, paddingTop: 0, config: { ...config.gentle, duration: 200 },
+        transform: 'rotate(0deg)', marginLeft: 16, marginTop: 0, config: { ...config.gentle, duration: 200 },
       });
       // wave 4
       await next({
-        transform: 'rotate(-2deg)', paddingLeft: 13, paddingTop: 2, config: { ...config.gentle, duration: 150 },
+        transform: 'rotate(-2deg)', marginLeft: 13, marginTop: 2, config: { ...config.gentle, duration: 150 },
       });
       await next({
-        transform: 'rotate(0deg)', paddingLeft: 0, paddingTop: 0, config: { ...config.gentle, duration: 200 },
+        transform: 'rotate(0deg)', marginLeft: 0, marginTop: 0, config: { ...config.gentle, duration: 200 },
       });
       ownProps.onRest();
     },
@@ -75,9 +80,9 @@ const Containers = {
   poke: Keyframes.Spring({
     show: { opacity: 1 },
     poke: async (next, cancel, ownProps) => {
-      await next({ paddingLeft: 0, paddingRight: 0, config: { easing: t => t, duration: 100 } });
-      await next({ paddingLeft: 10, paddingRight: 0, config: { easing: t => t, duration: 100 } });
-      await next({ paddingLeft: 0, paddingRight: 0, config: { easing: t => t, duration: 100 } });
+      await next({ marginLeft: 0, config: { easing: t => t, duration: 100 } });
+      await next({ marginLeft: 10, config: { easing: t => t, duration: 100 } });
+      await next({ marginLeft: 0, config: { easing: t => t, duration: 100 } });
       ownProps.onRest();
     },
   }),
@@ -147,14 +152,12 @@ class Header extends Component {
               onRest={this.onEndWave}
             >
               {waveStyle => (
-                <span>
-                  <Emoji
-                    onClick={this.onClickWave}
-                    symbol="👋"
-                    style={{ ...waveStyle, transformOrigin: 'center', position: 'absolute' }}
-                    label="wave"
-                  />
-                </span>
+                <Emoji
+                  onClick={this.onClickWave}
+                  src={wave}
+                  style={{ ...waveStyle, transformOrigin: 'center', position: 'absolute' }}
+                  className="xl"
+                />
               )}
             </Containers.wave>
           </div>
@@ -165,7 +168,12 @@ class Header extends Component {
             <b>Isaiah Nields</b>
             , a CS student with expertise in machine learning.
             {" I'll "}
-            be a SWE Intern at Facebook for Summer 2019 👨‍💻
+            be a SWE Intern at Facebook for Summer 2019&nbsp;
+            <Emoji
+              src={technologist}
+              className="l"
+              style={{ marginBottom: '5px' }}
+            />
           </div>
 
           {/* Contact */}
@@ -180,7 +188,8 @@ class Header extends Component {
                 <Emoji
                   onClick={this.onClickPoke}
                   style={pokeStyle}
-                  symbol=" 👉 "
+                  src={point}
+                  className="m"
                   label="point-right"
                 />
               ) }

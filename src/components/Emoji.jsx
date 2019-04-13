@@ -4,25 +4,22 @@ import PropTypes from 'prop-types';
 
 function Emoji(props) {
   const {
-    style, symbol, onClick, className,
+    style, onClick, className, src,
   } = props;
   return (
-    <button
-      style={{
-        fontSize: 'inherit',
-        ...style,
-        padding: 0,
-        border: 'none',
-        background: 'none',
-        outline: 'none',
-        pointerEvents: 'auto',
-      }}
-      onClick={onClick}
-      type="button"
-      className={className}
-    >
-      {symbol}
-    </button>
+      <img
+        src={src}
+        style={{
+          ...style,
+          padding: 0,
+          border: 'none',
+          background: 'none',
+          outline: 'none',
+          pointerEvents: 'auto',
+        }}
+        onClick={onClick}
+        className={className}
+      />
   );
 }
 
@@ -35,7 +32,7 @@ Emoji.propTypes = {
 
 Emoji.defaultProps = {
   onClick: null,
-  className: null
+  className: null,
 };
 
 export default Emoji;
