@@ -1,5 +1,8 @@
-import { Card } from 'react-bootstrap';
+import { Card, Col } from 'react-bootstrap';
 import React from 'react';
+import Emoji from './Emoji';
+import calendar from '../assets/calendar.png';
+import link_ from '../assets/link.png';
 
 const style = {
   link: {
@@ -40,11 +43,13 @@ function Paper(props) {
       <Card.Body>
         <Card.Title style={style.title}><span style={{ alignSelf: 'flex-end' }}>{title}</span></Card.Title>
         <span style={style.date}>
-          {'📅 '}
+          <Emoji src={calendar} style={{ width: '15pt', height: '15pt', marginBottom: '5px' }} />
+          &nbsp;
           {date}
         </span>
         <a href={link} target="_blank" rel="noopener noreferrer" style={style.link}>
-          {'🔗'}
+          <Emoji src={link_} style={{ width: '15pt', height: '15pt', marginBottom: '5px' }} />
+          &nbsp;
         </a>
       </Card.Body>
     </Card>
