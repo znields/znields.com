@@ -9,10 +9,10 @@ class Footer extends React.Component {
       <div>
         <Row>
           <Col>
-            <Social sites={['https://www.linkedin.com/in/isaiahnields/', 'https://twitter.com/isaiahnields', 'https://github.com/isaiahnields', 'https://medium.com/@isaiahnields', 'https://www.facebook.com/isaiahnields', 'mailto:imnields@gmail.com']} />
+            <Social sites={['https://www.linkedin.com/in/isaiahnields/', 'https://twitter.com/isaiahnields', 'https://github.com/isaiahnields']} />
           </Col>
           <Col>
-            <Watermark text="❤️" />
+            <Watermark />
           </Col>
         </Row>
 

@@ -1,11 +1,14 @@
 import React from 'react';
 import { Keyframes } from 'react-spring/renderprops';
+import Emoji from './Emoji';
+
+import heart from '../assets/heart.png';
 
 const style = {
-  fontSize: '12pt',
+  height: '12pt',
+  width: '12pt',
   marginRight: '10vw',
   float: 'right',
-  transformOrigin: '6pt 5pt',
 };
 
 const Container = Keyframes.Spring({
@@ -19,13 +22,12 @@ const Container = Keyframes.Spring({
 });
 
 function Watermark(props) {
-  const { text } = props;
 
   return (
     <div>
-      <Container state="beat" style={{height: '500px', width: '500px'}}>
+      <Container state="beat" style={{ verticalAlign: 'middle' }}>
         { animationStyle => (
-          <div style={{...animationStyle, ...style}}>{text}</div>
+          <Emoji style={{ ...animationStyle, ...style }} src={heart} />
         )}
       </Container>
     </div>
