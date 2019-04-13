@@ -5,6 +5,10 @@ import {
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import dayStore from '../store/day';
+import Emoji from '../components/Emoji';
+
+import calendar from '../assets/calendar.png';
+import pushpin from '../assets/pushpin.png';
 
 const style = {
   date: {
@@ -61,11 +65,13 @@ class ControlledTabs extends React.Component {
                 <Tab.Pane key={job.company} eventKey={job.company}>
                   <Row>
                     <Col style={style.location}>
-                      {'📍 '}
+                      <Emoji src={pushpin} style={{ width: '15pt', height: '15pt', marginBottom: '5px' }} />
+                      &nbsp;
                       {job.location}
                     </Col>
                     <Col md={7} style={style.date}>
-                      {'📅 '}
+                      <Emoji src={calendar} style={{ width: '15pt', height: '15pt', marginBottom: '5px' }} />
+                      &nbsp;
                       {job.date}
                     </Col>
                   </Row>
