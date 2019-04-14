@@ -23,7 +23,6 @@ const style = {
   },
   company: {
     fontWeight: 'bold',
-
     borderRadius: '0',
   },
 };
