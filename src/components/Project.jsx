@@ -67,11 +67,11 @@ Project.propTypes = {
   children: PropTypes.string.isRequired,
   stack: PropTypes.arrayOf(String).isRequired,
   href: PropTypes.string.isRequired,
-  award: PropTypes.string,
+  award: PropTypes.element,
 };
 
 Project.defaultProps = {
-  award: '',
+  award: null,
 };
 
 export default Project;

@@ -1,4 +1,4 @@
-import { Card, Col } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import React from 'react';
 import Emoji from './Emoji';
 import calendar from '../assets/calendar.png';

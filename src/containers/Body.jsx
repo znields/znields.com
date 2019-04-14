@@ -190,25 +190,25 @@ function Body() {
 
       <Section title="Skills">
         <Row>
-          <Col xl={3} md={6} xs={6}>
+          <Col xl={3} md={6} sm={6} xs={12}>
             <List
               title="Languages"
               items={['Python', 'JavaScript', 'Java', 'C++', 'HTML', 'CSS', 'SQL']}
             />
           </Col>
-          <Col xl={3} md={6} xs={6}>
+          <Col xl={3} md={6} sm={6} xs={12}>
             <List
               title="Tools"
               items={['Bash', 'Git & GitHub', 'Postman', 'Chrome DevTools', 'MongoDB']}
             />
           </Col>
-          <Col xl={3} md={6} xs={6}>
+          <Col xl={3} md={6} sm={6} xs={12}>
             <List
               title="Libraries"
               items={['TensorFlow', 'PyTorch', 'Keras', 'Pandas', 'React', 'Node.js', 'Electron']}
             />
           </Col>
-          <Col xl={3} md={6} xs={6}>
+          <Col xl={3} md={6} sm={6} xs={12}>
             <List
               title="Machine Learning"
               items={['Feedforward NN', 'Recurrent NN', 'Convolutional NN', 'Gradient Descent', 'Regression', 'Gradient Boosting']}
