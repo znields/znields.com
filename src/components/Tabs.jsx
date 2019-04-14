@@ -17,12 +17,13 @@ const style = {
     whiteSpace: 'nowrap',
   },
   location: {
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     fontSie: '10pt',
     whiteSpace: 'nowrap',
   },
   company: {
     fontWeight: 'bold',
+
     borderRadius: '0',
   },
 };
@@ -81,7 +82,7 @@ class ControlledTabs extends React.Component {
                     </Col>
                   </Row>
                   <ul>
-                    {job.items.map(item => <li key={item}>{item}</li>)}
+                    {job.items.map(item => <li key={item} style={{ fontSize: '12pt' }}>{item}</li>)}
                   </ul>
                 </Tab.Pane>
               ))}
