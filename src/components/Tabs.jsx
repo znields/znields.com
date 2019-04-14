@@ -23,7 +23,6 @@ const style = {
   },
   company: {
     fontWeight: 'bold',
-    borderRadius: '0',
   },
 };
 
@@ -43,7 +42,6 @@ class ControlledTabs extends React.Component {
     const { key } = this.state;
     const { day } = dayStore;
     const color = day ? 'black' : 'white';
-    const backgroundColor = day ? 'lightgrey' : 'rgb(0, 123, 255)';
 
     return (
       <Tab.Container defaultActiveKey={key}>
@@ -54,9 +52,7 @@ class ControlledTabs extends React.Component {
                 <Nav.Item key={job.company} onClick={() => { this.setState({ key: job.company }); }}>
                   <Nav.Link
                     eventKey={job.company}
-                    style={{
-                      ...style.company, backgroundColor: key === job.company ? backgroundColor : 'inherit', borderRadius: '20px', color,
-                    }}
+                    style={{ ...style.company, color }}
                   >
                     {job.company}
                   </Nav.Link>
