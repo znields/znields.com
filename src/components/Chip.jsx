@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const style = {
   margin: '5px 0px 0px 5px',
@@ -23,5 +24,9 @@ function Chip(props) {
     <span style={style}>{children}</span>
   );
 }
+
+Chip.propTypes = {
+  children: PropTypes.string.isRequired,
+};
 
 export default Chip;
