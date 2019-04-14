@@ -5,7 +5,7 @@ import {
 import PropTypes from 'prop-types';
 import { observer } from 'mobx-react';
 import dayStore from '../store/day';
-import Emoji from '../components/Emoji';
+import Emoji from './Emoji';
 
 import calendar from '../assets/calendar.png';
 import pushpin from '../assets/pushpin.png';
@@ -52,7 +52,12 @@ class ControlledTabs extends React.Component {
             <Nav className="flex-column">
               { jobs.map(job => (
                 <Nav.Item key={job.company} onClick={() => { this.setState({ key: job.company }); }}>
-                  <Nav.Link eventKey={job.company} style={{ ...style.company, backgroundColor: key === job.company ? backgroundColor : 'inherit', borderRadius: '20px', color }}>
+                  <Nav.Link
+                    eventKey={job.company}
+                    style={{
+                      ...style.company, backgroundColor: key === job.company ? backgroundColor : 'inherit', borderRadius: '20px', color,
+                    }}
+                  >
                     {job.company}
                   </Nav.Link>
                 </Nav.Item>
