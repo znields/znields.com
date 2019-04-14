@@ -11,6 +11,9 @@ import Emoji from '../components/Emoji';
 import secondPlace from '../assets/second-place.png';
 import trophy from '../assets/trophy.png';
 import cloud from '../assets/cloud.png';
+import basketball from '../assets/basketball.png';
+import books from '../assets/books.png';
+import face from '../assets/face.png';
 
 const style = {
   marginLeft: '6vw',
@@ -22,13 +25,24 @@ function Body() {
     <div style={style}>
       <Section title="About Me">
         <p>
-          {"I'm a 2nd-year computer science undergrad at the "}
+          {"I'm currently a 2nd-year computer science undergrad at the "}
           <SmallLink href="http://www.ufl.edu/">University of Florida</SmallLink>
-          {". While I'm not big on going to class, I enjoy learning through my personal projects. "}
-          {' For my projects, I focus on simplicity, efficiency, and utility. '}
+          {". While I'm not big on going to class, I enjoy learning through personal projects and self-study. "}
+          { "Recently, I've developed an interest in machine learning and its potential applications. "}
+          {'Pursuing that interest, I have been reading, writing, and coding about many different ML models. '}
+          {'In addition, I have built a few applied ML projects. '}
+          {"This summer I'm super excited to continue developing these skills as a software engineer in "}
+          <SmallLink href="https://www.facebook.com">Facebook's</SmallLink>
+          {' applied machine learning division.'}
         </p>
         <p>
-          {"When I'm not in in front of a computer, I enjoy playing basketball and reading."}
+          {"When I'm not in in front of a computer, I enjoy playing basketball "}
+          <Emoji src={basketball} style={{ width: '13pt', height: '13pt' }} />
+          {', reading '}
+          <Emoji src={books} style={{ width: '13pt', height: '13pt' }} />
+          {', and building new connections '}
+          <Emoji src={face} style={{ width: '13pt', height: '13pt' }} />
+          .
         </p>
 
 
@@ -175,14 +189,6 @@ function Body() {
                 date="Feb 1, 2019"
               />
             </Col>
-            {/* <Col> */}
-            {/*  <Paper */}
-            {/*    title="DeepTrash @ MakeHarvard 2019" */}
-            {/*    img="https://cdn-images-1.medium.com/max/800/1*DBhJOOcWXUiVjZaYfExWSQ.gif" */}
-            {/*    link="https://medium.com/@isaiahnields/deeptrash-makeharvard-2019-aa0a9cf0b68b" */}
-            {/*    date="Feb 6, 2019" */}
-            {/*  /> */}
-            {/* </Col> */}
           </Row>
         </Container>
 

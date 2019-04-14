@@ -12,7 +12,6 @@ import technologist from '../assets/technologist.png';
 const style = {
   container: {
     height: '100vh',
-    // minHeight: '500px',
     marginBottom: '100px',
   },
   greeting: {
