@@ -150,7 +150,7 @@ function Body() {
           jobs={[
             {
               company: 'Facebook',
-              items: ['Will be working on natural language processing projects for the Assistant EGN team.', 'Super pumped for my first day—May 28.'],
+              items: ['Will be working on natural language processing projects for the Assistant ENG team.', 'Super pumped for my first day—May 28.'],
               location: 'Menlo Park, CA',
               date: 'May 2019 - Aug 2019',
             },
