@@ -165,7 +165,7 @@ class Header extends Component {
           <div style={style.introduction} className="l">
             {"I'm "}
             <b>Isaiah Nields</b>
-            , a CS student with expertise in machine learning.
+            , a CS student with skills in machine learning.
             {" I'll "}
             be a SWE Intern at Facebook for Summer 2019&nbsp;
             <Emoji
