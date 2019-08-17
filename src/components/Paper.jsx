@@ -26,6 +26,8 @@ const style = {
   image: {
     maxHeight: '480px',
     maxWidth: '270px',
+    height: 'auto',
+    width: 'auto',
     marginRight: 'auto',
     marginLeft: 'auto',
     paddingTop: '10px',
