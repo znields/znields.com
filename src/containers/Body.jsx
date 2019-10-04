@@ -83,6 +83,15 @@ function Body() {
           </Project>
 
           <Project
+            icon="https://github.com/isaiahnields/roast-bot/blob/gh-pages/logo.png"
+            title="Roast Bot"
+            stack={['React', 'JavaScript', 'Python', 'AWS Lambda', 'Clarifai', 'Convolutional Neural Network']}
+            href="https://github.com/isaiahnields/roast-bot"
+        >
+          A collection of machine learning models implemented from scratch
+        </Project>
+
+          <Project
             icon="https://raw.githubusercontent.com/isaiahnields/machine-learning-models/master/icon.png"
             title="Machine Learning Models"
             stack={['Python', 'NumPy', 'SciPy', 'Matplotlib', 'Seaborn', 'ImageMagick']}
