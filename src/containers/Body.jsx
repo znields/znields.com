@@ -86,9 +86,9 @@ function Body() {
             icon="https://raw.githubusercontent.com/isaiahnields/roast-bot/master/web/public/logo.png"
             title="Roast Bot"
             stack={['React', 'JavaScript', 'Python', 'AWS Lambda', 'Clarifai', 'Convolutional Neural Network']}
-            href="https://github.com/isaiahnields/roast-bot"
+            href="https://isaiahnields.com/roast-bot"
         >
-          A bot powered by Convolutional Neural Nets which serves roasts to its users.
+          A bot powered by AI which flames its users with computer vision
         </Project>
 
           <Project

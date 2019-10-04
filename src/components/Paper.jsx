@@ -27,7 +27,7 @@ const style = {
     maxHeight: '480px',
     maxWidth: '270px',
     height: 'auto',
-    width: 'auto',
+    width: '100%',
     marginRight: 'auto',
     marginLeft: 'auto',
     paddingTop: '10px',
