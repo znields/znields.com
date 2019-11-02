@@ -14,6 +14,7 @@ import cloud from '../assets/cloud.png';
 import basketball from '../assets/basketball.png';
 import books from '../assets/books.png';
 import face from '../assets/face.png';
+import roastBotLogo from '../assets/roast-bot-logo.png';
 
 const style = {
   marginLeft: '6vw',
@@ -83,7 +84,7 @@ function Body() {
           </Project>
 
           <Project
-            icon="https://raw.githubusercontent.com/isaiahnields/roast-bot/master/web/public/logo.png"
+            icon={roastBotLogo}
             title="Roast Bot"
             stack={['React', 'JavaScript', 'Python', 'AWS Lambda', 'Clarifai', 'Convolutional Neural Network']}
             href="https://isaiahnields.com/roast-bot"
