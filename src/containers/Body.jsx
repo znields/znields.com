@@ -11,7 +11,7 @@ import Emoji from '../components/Emoji';
 import secondPlace from '../assets/second-place.png';
 import trophy from '../assets/trophy.png';
 import cloud from '../assets/cloud.png';
-import basketball from '../assets/basketball.png';
+import dance from '../assets/dance.png';
 import books from '../assets/books.png';
 import face from '../assets/face.png';
 import roastBotLogo from '../assets/roast-bot-logo.png';
@@ -26,19 +26,15 @@ function Body() {
     <div style={style}>
       <Section title="About Me">
         <p>
-          {"I'm currently a 2nd-year computer science undergrad at the "}
-          <SmallLink href="http://www.ufl.edu/">University of Florida</SmallLink>
-          {". While I'm not big on going to class, I enjoy learning through personal projects and self-study. "}
-          { "Recently, I've developed an interest in machine learning and its potential applications. "}
-          {'Pursuing that interest, I have been reading, writing, and coding about many different ML models. '}
-          {'In addition, I have built a few applied ML projects. '}
-          {"This summer I'm super excited to continue developing these skills as a software engineer in "}
-          <SmallLink href="https://www.facebook.com">Facebook's</SmallLink>
-          {' applied machine learning division.'}
+          {"I'm currently a software engineer at "}
+          <SmallLink href="https://www.facebook.com">Facebook</SmallLink>
+          {" where I will work on machine learning systems [currently matching with teams]. Outside of work, I enjoy learning about my craft through reading, writing, and developing personal projects. "}
+          {'See more of this work below. In addition to my technical work, I am attempting to gain a wholistic/applied knowledge of ML by learning about the economic, social, and legal issues affecting this new set of techniques. In the future, I hope to use this knowledge to build and launch ML products of my own.'}
+          {""}
         </p>
         <p>
-          {"When I'm not in in front of a computer, I enjoy playing basketball "}
-          <Emoji src={basketball} style={{ width: '13pt', height: '13pt' }} />
+          {"When I'm not thinking about ML, I enjoy dancing "}
+          <Emoji src={dance} style={{ width: '13pt', height: '13pt' }} />
           {', reading '}
           <Emoji src={books} style={{ width: '13pt', height: '13pt' }} />
           {', and building new connections '}

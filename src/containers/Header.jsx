@@ -7,7 +7,7 @@ import NightDay from '../components/NightDay';
 
 import wave from '../assets/wave.png';
 import point from '../assets/point.png';
-import technologist from '../assets/technologist.png';
+import data from '../assets/data.png';
 
 const style = {
   container: {
@@ -165,11 +165,11 @@ class Header extends Component {
           <div style={style.introduction} className="l">
             {"I'm "}
             <b>Isaiah Nields</b>
-            , a CS student with skills in machine learning.
-            {" I'll "}
-            be a SWE Intern at Facebook for Summer 2019&nbsp;
+            , a software engineer with skills in machine learning.
+            {" I "}
+            build products that harness the power of data&nbsp;
             <Emoji
-              src={technologist}
+              src={data}
               className="l"
               style={{ marginBottom: '5px' }}
             />
