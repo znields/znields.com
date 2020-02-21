@@ -155,8 +155,20 @@ function Body() {
         <Tabs
           jobs={[
             {
+              company: 'Facebok',
+              items: ['Currently in host matching searching for ML teams.'],
+              location: 'Menlo Park, CA',
+              date: 'Nov 2019 - Feb 2020',
+            },
+            {
+              company: 'Admiral',
+              items: ['Worked on machine learning and data related tasks with the product team.', 'Built out internal data analysis tools.'],
+              location: 'Menlo Park, CA',
+              date: 'Nov 2019 - Feb 2020',
+            },
+            {
               company: 'Facebook',
-              items: ['Will be working on natural language processing projects for the Assistant ENG team.', 'Super pumped for my first day—May 28.'],
+              items: ['Worked on the Graph Intelligence team at Facebook.', 'Helped build out a graph embeddings framework used on various internal teams.', 'Trained and benchmarked machine learning and deep learning models on various graph-related tasks.'],
               location: 'Menlo Park, CA',
               date: 'May 2019 - Aug 2019',
             },
