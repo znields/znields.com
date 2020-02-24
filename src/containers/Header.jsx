@@ -167,7 +167,7 @@ class Header extends Component {
             <b>Isaiah Nields</b>
             , a software engineer with skills in machine learning.
             {" I "}
-            build products that harness the power of data&nbsp;
+            build products enabled by data&nbsp;
             <Emoji
               src={data}
               className="l"

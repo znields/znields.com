@@ -26,14 +26,14 @@ function Body() {
     <div style={style}>
       <Section title="About Me">
         <p>
-          {"I'm currently a software engineer at "}
+          {"I'm a software engineer at "}
           <SmallLink href="https://www.facebook.com">Facebook</SmallLink>
-          {" where I will work on machine learning systems [currently matching with teams]. Outside of work, I enjoy learning about my craft through reading, writing, and developing personal projects. "}
-          {'See more of this work below. In addition to my technical work, I am attempting to gain a wholistic/applied knowledge of ML by learning about the economic, social, and legal issues affecting this new set of techniques. In the future, I hope to use this knowledge to build and launch ML products of my own.'}
+          {" currently searching for an applied machine learning team. Prior to joining Facebook, I studied computer science at the "} <SmallLink href="https://ufl.edu">University of Florida</SmallLink>. {" Outside of work and school, I am constantly honing my craft through reading, writing, and developing personal projects. "}
+          {'See more of this work below. In addition to my technical work, I want to gain a wholistic/applied knowledge of ML by learning about the economic, social, and legal issues affecting this new set of techniques. In the future, I hope to use this knowledge to build and launch ML products of my own.'}
           {""}
         </p>
         <p>
-          {"When I'm not thinking about ML, I enjoy dancing "}
+          {"In my free time, I enjoy shuffling "}
           <Emoji src={dance} style={{ width: '13pt', height: '13pt' }} />
           {', reading '}
           <Emoji src={books} style={{ width: '13pt', height: '13pt' }} />
@@ -155,20 +155,14 @@ function Body() {
         <Tabs
           jobs={[
             {
-              company: 'Facebok',
-              items: ['Currently in host matching searching for ML teams.'],
-              location: 'Menlo Park, CA',
-              date: 'Nov 2019 - Feb 2020',
-            },
-            {
               company: 'Admiral',
-              items: ['Worked on machine learning and data related tasks with the product team.', 'Built out internal data analysis tools.'],
-              location: 'Menlo Park, CA',
+              items: ['Worked at Admiral, an adblock recovery service, on the engineering team.', 'Trained and deployed a neural network to predict when to best engage a user with requests to turn off ad blocker.', 'Used features such as time of day and previous user behavior data to determine optimal engagement timing.', 'Improved adblock conversion rate by ~3% greatly increasing customer revenues.'],
+              location: 'Gainesville, FL',
               date: 'Nov 2019 - Feb 2020',
             },
             {
               company: 'Facebook',
-              items: ['Worked on the Graph Intelligence team at Facebook.', 'Helped build out a graph embeddings framework used on various internal teams.', 'Trained and benchmarked machine learning and deep learning models on various graph-related tasks.'],
+              items: ['Worked as an intern on the Graph Embeddings team.', 'Helped build out an ML graph embedding platform for internal use at Facebook.', 'Trained and benchmarked models on various graph-related tasks including link prediction and entity resolution.'],
               location: 'Menlo Park, CA',
               date: 'May 2019 - Aug 2019',
             },
