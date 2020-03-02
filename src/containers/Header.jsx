@@ -165,9 +165,9 @@ class Header extends Component {
           <div style={style.introduction} className="l">
             {"I'm "}
             <b>Isaiah Nields</b>
-            , a software engineer with skills in machine learning.
+            , a full stack software engineer with an interest in machine learning.
             {" I "}
-            build products enabled by data&nbsp;
+            love building products enabled by data&nbsp;
             <Emoji
               src={data}
               className="l"

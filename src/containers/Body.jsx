@@ -28,9 +28,8 @@ function Body() {
         <p>
           {"I'm a software engineer at "}
           <SmallLink href="https://www.facebook.com">Facebook</SmallLink>
-          {" currently searching for an applied machine learning team. Prior to joining Facebook, I studied computer science at the "} <SmallLink href="https://ufl.edu">University of Florida</SmallLink>. {" Outside of work and school, I am constantly honing my craft through reading, writing, and developing personal projects. "}
-          {'See more of this work below. In addition to my technical work, I want to gain a wholistic/applied knowledge of ML by learning about the economic, social, and legal issues affecting this new set of techniques. In the future, I hope to use this knowledge to build and launch ML products of my own.'}
-          {""}
+          {" currently searching for a team in the San Francisco office. Prior to joining Facebook, I studied computer science at the "} <SmallLink href="https://ufl.edu">University of Florida</SmallLink>. {" Outside of work and school, I have taken interest in building products enabled by ML. "}
+          {"See more about this work below. In addition to my project work, I've been building a wholistic knowledge of ML by reading about the economic, social, and legal issues affecting this new set of techniques."}
         </p>
         <p>
           {"In my free time, I enjoy shuffling "}
