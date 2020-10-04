@@ -201,6 +201,16 @@ function Body() {
               />
             </Col>
           </Row>
+          <Row>
+            <Col lg={6} md={6}>
+            <Paper
+              title="Cat Parasite Has Mind and Society Altering Effects"
+              img="https://miro.medium.com/max/1400/0*AVpEcRMzzG8wZ8rl.jpg"
+              link="https://medium.com/@isaiahnields/cat-parasite-has-mind-and-society-altering-effects-a54266f4a0ad"
+              date="Oct 4, 2020"
+            />
+            </Col>
+          </Row>
         </Container>
 
       </Section>
