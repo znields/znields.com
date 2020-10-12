@@ -15,6 +15,7 @@ import dance from '../assets/dance.png';
 import books from '../assets/books.png';
 import face from '../assets/face.png';
 import roastBotLogo from '../assets/roast-bot-logo.png';
+import roastBotArticle from '../assets/roast-bot-article.png';
 
 const style = {
   marginLeft: '6vw',
@@ -28,7 +29,7 @@ function Body() {
         <p>
           {"I'm a software engineer at "}
           <SmallLink href="https://www.facebook.com">Facebook</SmallLink>
-          {" currently searching for a team in the San Francisco office. Prior to joining Facebook, I studied computer science at the "} <SmallLink href="https://ufl.edu">University of Florida</SmallLink>. {" Outside of work and school, I have taken interest in building products enabled by ML. "}
+          {" currently working on the Recruiting Data and ML team. Prior to joining Facebook, I studied computer science at the "} <SmallLink href="https://ufl.edu">University of Florida</SmallLink>. {" Outside of work and school, I have taken interest in building products enabled by ML. "}
           {"See more about this work below. In addition to my project work, I've been building a wholistic knowledge of ML by reading about the economic, social, and legal issues affecting this new set of techniques."}
         </p>
         <p>
@@ -208,6 +209,14 @@ function Body() {
               img="https://miro.medium.com/max/1400/0*AVpEcRMzzG8wZ8rl.jpg"
               link="https://medium.com/@isaiahnields/cat-parasite-has-mind-and-society-altering-effects-a54266f4a0ad"
               date="Oct 4, 2020"
+            />
+            </Col>
+            <Col lg={6} md={6}>
+            <Paper
+              title="Apple Thought Policed my iOS App"
+              img={roastBotArticle}
+              link="https://medium.com/@isaiahnields/apple-thought-policed-my-ios-app-79760a25dee4"
+              date="Oct 11, 2020"
             />
             </Col>
           </Row>
