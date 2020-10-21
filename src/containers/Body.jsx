@@ -211,14 +211,6 @@ function Body() {
               date="Oct 4, 2020"
             />
             </Col>
-            <Col lg={6} md={6}>
-            <Paper
-              title="Apple Thought Policed my iOS App"
-              img={roastBotArticle}
-              link="https://medium.com/@isaiahnields/apple-thought-policed-my-ios-app-79760a25dee4"
-              date="Oct 11, 2020"
-            />
-            </Col>
           </Row>
         </Container>
 
