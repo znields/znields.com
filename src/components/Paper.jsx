@@ -26,11 +26,13 @@ const style = {
   image: {
     maxHeight: '480px',
     maxWidth: '270px',
-    height: 'auto',
-    width: '100%',
-    marginRight: 'auto',
-    marginLeft: 'auto',
-    paddingTop: '10px',
+  },
+  imageContainer: {
+    height: 220,
+    textAlign: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
 };
 
@@ -41,7 +43,9 @@ function Paper(props) {
 
   return (
     <Card style={style.card}>
-      <Card.Img variant="top" src={img} style={style.image} />
+      <div style={style.imageContainer}>
+       <Card.Img variant="top" src={img} style={style.image} />
+      </div>
       <Card.Body>
         <Card.Title style={style.title}><span style={{ alignSelf: 'flex-end' }}>{title}</span></Card.Title>
         <span style={style.date}>

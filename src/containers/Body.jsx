@@ -15,7 +15,7 @@ import dance from '../assets/dance.png';
 import books from '../assets/books.png';
 import face from '../assets/face.png';
 import roastBotLogo from '../assets/roast-bot-logo.png';
-import roastBotArticle from '../assets/roast-bot-article.png';
+import treeOfSimulations from '../assets/tree-of-simulations.jpeg';
 
 const style = {
   marginLeft: '6vw',
@@ -185,15 +185,25 @@ function Body() {
       <Section title="Writing">
         <Container>
           <Row>
+          <Col lg={6} md={6}>
+              <Paper
+                title="Are We Living in a Simulation?"
+                img={treeOfSimulations}
+                link="https://isaiahnields.medium.com/are-we-living-in-a-simulation-11c4716e29b"
+                date="Sep 21, 2021"
+              />
+            </Col>
             <Col lg={6} md={6}>
               <Paper
-                title="Neural Networks: why do they work so well? Part I"
+                title="Neural Networks: why do they work so well?"
                 img="https://raw.githubusercontent.com/isaiahnields/machine-learning-models/master/demos/results/2_spiral_neural_network.gif"
                 link="https://towardsdatascience.com/neural-networks-why-do-they-work-so-well-part-i-22f0d3690511"
                 date="Apr 3, 2019"
               />
             </Col>
-            <Col lg={6} md={6}>
+          </Row>
+          <Row>
+          <Col lg={6} md={6}>
               <Paper
                 title="Linear Regression from Scratch"
                 img="https://raw.githubusercontent.com/isaiahnields/machine-learning-models/master/demos/results/linear_regression_train.gif"
@@ -201,8 +211,6 @@ function Body() {
                 date="Feb 1, 2019"
               />
             </Col>
-          </Row>
-          <Row>
             <Col lg={6} md={6}>
             <Paper
               title="Cat Parasite Has Mind and Society Altering Effects"
