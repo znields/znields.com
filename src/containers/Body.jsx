@@ -29,8 +29,8 @@ function Body() {
         <p>
           {"I'm a software engineer at "}
           <SmallLink href="https://www.facebook.com">Facebook</SmallLink>
-          {" currently working on the Recruiting Data and ML team. Prior to joining Facebook, I studied computer science at the "} <SmallLink href="https://ufl.edu">University of Florida</SmallLink>. {" Outside of work and school, I have taken interest in building products enabled by ML. "}
-          {"See more about this work below. In addition to my project work, I've been building a wholistic knowledge of ML by reading about the economic, social, and legal issues affecting this new set of techniques."}
+          {" currently working on the Recruiting Data and ML team. Prior to joining Facebook, I studied computer science at the "} <SmallLink href="https://ufl.edu">University of Florida</SmallLink>. {" Outside of work and school, I have taken interest in building various software products. "}
+          {"See more about this work below. In addition to my project work, I've been building a wholistic knowledge of the AR/VR by reading about the economic, social, and legal issues that affect the space."}
         </p>
         <p>
           {"In my free time, I enjoy shuffling "}
@@ -154,6 +154,17 @@ function Body() {
       <Section title="Experience">
         <Tabs
           jobs={[
+            {
+              company: 'Meta',
+              items: [
+                'Full-stack software engineer working on the Recruiting ML and Data team.',
+                'Lead initiative to build out recruiting knowledge graph for companies, skills, job titles, and schools.',
+                'Achieved 54% knowledge coverage for incoming recruiting data and improved hiring ML models by up to 5%.',
+                'Integrated knowledge graph into recruiting surfaces including referrals, careers site, and the job requirements tool.'
+              ],
+              location: 'San Francisco, CA',
+              date: 'Feb 2020 - Present',
+            },
             {
               company: 'Admiral',
               items: ['Worked at Admiral, an adblock recovery service, on the engineering team.', 'Trained and deployed a neural network to predict when to best engage a user with requests to turn off ad blocker.', 'Used features such as time of day and previous user behavior data to determine optimal engagement timing.', 'Improved adblock conversion rate by ~3% greatly increasing customer revenues.'],
