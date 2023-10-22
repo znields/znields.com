@@ -13,7 +13,7 @@
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.11.0",
     "react-media": "^1.10.0",
-    "react-scripts": "^2.1.8",
+    "react-scripts": "^5.0.1",
     "react-social-icons": "^4.1.0",
     "react-spring": "^8.0.27"
   },
