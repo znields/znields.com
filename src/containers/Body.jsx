@@ -83,7 +83,7 @@ function Body() {
             icon={roastBotLogo}
             title="Roast Bot"
             stack={['React', 'JavaScript', 'Python', 'AWS Lambda', 'Clarifai', 'Convolutional Neural Network']}
-            href="https://isaiahnields.com/roast-bot"
+            href="https://roastbot.fun"
         >
           A bot powered by AI which flames its users with computer vision
         </Project>
