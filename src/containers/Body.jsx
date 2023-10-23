@@ -11,9 +11,6 @@ import Emoji from '../components/Emoji';
 import secondPlace from '../assets/second-place.png';
 import trophy from '../assets/trophy.png';
 import cloud from '../assets/cloud.png';
-import dance from '../assets/dance.png';
-import books from '../assets/books.png';
-import face from '../assets/face.png';
 import roastBotLogo from '../assets/roast-bot-logo.png';
 import treeOfSimulations from '../assets/tree-of-simulations.png';
 
@@ -33,12 +30,7 @@ function Body() {
           {"See more about this work below. In addition to my project work, I've been building a wholistic knowledge of ML by reading about the economic, social, and legal issues affecting this new set of techniques."}
         </p>
         <p>
-          {"In my free time, I enjoy shuffling "}
-          <Emoji src={dance} style={{ width: '13pt', height: '13pt' }} />
-          {', reading '}
-          <Emoji src={books} style={{ width: '13pt', height: '13pt' }} />
-          {', and building new connections '}
-          <Emoji src={face} style={{ width: '13pt', height: '13pt' }} />
+          {"In my free time, I enjoy biking around the San Francisco Bay Area and beyond. If you're interested in my workouts, check out my "}<SmallLink href="https://www.strava.com/athletes/45024992">Strava</SmallLink>
           .
         </p>
 
