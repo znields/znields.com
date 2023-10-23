@@ -15,7 +15,7 @@ import dance from '../assets/dance.png';
 import books from '../assets/books.png';
 import face from '../assets/face.png';
 import roastBotLogo from '../assets/roast-bot-logo.png';
-import treeOfSimulations from '../assets/tree-of-simulations.jpeg';
+import treeOfSimulations from '../assets/tree-of-simulations.png';
 
 const style = {
   marginLeft: '6vw',
@@ -58,7 +58,7 @@ function Body() {
                 &nbsp;1st Place - MakeHarvard 2019&nbsp;
                 <Emoji src={trophy} style={{ width: '13pt', height: '13pt' }} />
               </span>
-)}
+            )}
           >
             An intelligent trashcan that automatically sorts your waste for you
           </Project>
@@ -71,10 +71,10 @@ function Body() {
             award={(
               <span>
                 <Emoji src={secondPlace} style={{ width: '13pt', height: '13pt' }} />
-                  &nbsp;2nd Place - SwampHacks V&nbsp;
+                &nbsp;2nd Place - SwampHacks V&nbsp;
                 <Emoji src={secondPlace} style={{ width: '13pt', height: '13pt' }} />
               </span>
-)}
+            )}
           >
             A video monitoring system powered by deep learning
           </Project>
@@ -84,9 +84,9 @@ function Body() {
             title="Roast Bot"
             stack={['React', 'JavaScript', 'Python', 'AWS Lambda', 'Clarifai', 'Convolutional Neural Network']}
             href="https://roastbot.fun"
-        >
-          A bot powered by AI which flames its users with computer vision
-        </Project>
+          >
+            A bot powered by AI which flames its users with computer vision
+          </Project>
 
           <Project
             icon="https://raw.githubusercontent.com/isaiahnields/machine-learning-models/master/icon.png"
@@ -108,7 +108,7 @@ function Body() {
                 &nbsp;950+ downloads&nbsp;
                 <Emoji src={cloud} style={{ width: '13pt', height: '13pt' }} />
               </span>
-)}
+            )}
           >
             A desktop app to convert CSV files to SQLite databases
           </Project>
@@ -185,7 +185,7 @@ function Body() {
       <Section title="Writing">
         <Container>
           <Row>
-          <Col lg={6} md={6}>
+            <Col lg={6} md={6}>
               <Paper
                 title="Are We Living in a Simulation?"
                 img={treeOfSimulations}
@@ -203,7 +203,7 @@ function Body() {
             </Col>
           </Row>
           <Row>
-          <Col lg={6} md={6}>
+            <Col lg={6} md={6}>
               <Paper
                 title="Linear Regression from Scratch"
                 img="https://raw.githubusercontent.com/isaiahnields/machine-learning-models/master/demos/results/linear_regression_train.gif"
@@ -212,12 +212,12 @@ function Body() {
               />
             </Col>
             <Col lg={6} md={6}>
-            <Paper
-              title="Cat Parasite Has Mind and Society Altering Effects"
-              img="https://miro.medium.com/max/1400/0*AVpEcRMzzG8wZ8rl.jpg"
-              link="https://medium.com/@isaiahnields/cat-parasite-has-mind-and-society-altering-effects-a54266f4a0ad"
-              date="Oct 4, 2020"
-            />
+              <Paper
+                title="Cat Parasite Has Mind and Society Altering Effects"
+                img="https://miro.medium.com/max/1400/0*AVpEcRMzzG8wZ8rl.jpg"
+                link="https://medium.com/@isaiahnields/cat-parasite-has-mind-and-society-altering-effects-a54266f4a0ad"
+                date="Oct 4, 2020"
+              />
             </Col>
           </Row>
         </Container>
