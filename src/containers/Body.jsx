@@ -155,6 +155,12 @@ function Body() {
         <Tabs
           jobs={[
             {
+              company: 'Meta',
+              items: ['Software engineer working on the Recruiting ML and Data team.', 'Lead initiatives to build out recruiting knowledge graphs for companies, skills, and other entity types.', 'Drove product improvements on surfaces like referrals tooling, the career site, and candidate search.', 'Aided ML model development by improving resume data features and improved overall resume data accuracy through resume standardization and merging techniques.'],
+              location: 'San Francisco, CA',
+              date: 'Feb 2020 - Current',
+            },
+            {
               company: 'Admiral',
               items: ['Worked at Admiral, an adblock recovery service, on the engineering team.', 'Trained and deployed a neural network to predict when to best engage a user with requests to turn off ad blocker.', 'Used features such as time of day and previous user behavior data to determine optimal engagement timing.', 'Improved adblock conversion rate by ~3% greatly increasing customer revenues.'],
               location: 'Gainesville, FL',
