@@ -1,0 +1,24 @@
+import React from 'react';
+import Watermark from '../components/Watermark';
+import Social from '../components/Social';
+import { Row, Col } from 'react-bootstrap';
+
+class Footer extends React.Component {
+  render() {
+    return (
+      <div>
+        <Row>
+          <Col>
+            <Social sites={['https://www.linkedin.com/in/isaiahnields/', 'https://twitter.com/isaiahnields', 'https://www.instagram.com/isaiahmnields', 'https://github.com/isaiahnields', 'https://isaiahnields.medium.com']} />
+          </Col>
+          <Col>
+            <Watermark />
+          </Col>
+        </Row>
+
+      </div>
+    );
+  }
+}
+
+export default Footer;
