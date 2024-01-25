@@ -40,6 +40,15 @@ function Body() {
       <Section title="Projects">
         <Row>
         <Project
+            title="VidCycle"
+            icon="https://raw.githubusercontent.com/isaiahnields/vidcycle/master/logo.png"
+            stack={['Python', 'FFmpeg', 'Matplotlib']}
+            href="https://github.com/isaiahnields/vidcycle"
+          >
+            Enhance your cycling videos with GPS data overlay and statistics
+          </Project>
+
+        <Project
             title="DeepTrash"
             icon="https://raw.githubusercontent.com/isaiahnields/deep-trash/master/icon.png"
             stack={['Keras', 'Tensorflow', 'Python', 'Arduino', 'Raspberry Pi']}
@@ -53,15 +62,6 @@ function Body() {
             )}
           >
             An intelligent trashcan that automatically sorts your waste for you
-          </Project>
-
-          <Project
-            title="VidCycle"
-            icon="https://raw.githubusercontent.com/isaiahnields/vidcycle/master/logo.png"
-            stack={['Python', 'FFmpeg', 'Matplotlib']}
-            href="https://github.com/isaiahnields/vidcycle"
-          >
-            Enhance your cycling videos with GPS data overlay and statistics
           </Project>
 
           <Project
