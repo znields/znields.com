@@ -239,7 +239,7 @@ class Header extends Component {
                 style={{ ...emailStyle, ...style.email }}
                 href="mailto:zaynields@gmail.com"
               >
-                imnields@gmail.com
+                zaynields@gmail.com
               </a>
             )}
           </Spring>
