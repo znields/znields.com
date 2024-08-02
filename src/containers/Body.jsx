@@ -215,7 +215,7 @@ function Body() {
                 "Aided ML model development by improving resume data features and improved overall resume data accuracy through resume standardization and merging techniques.",
               ],
               location: "San Francisco, CA",
-              date: "Feb 2020 - Current",
+              date: "Feb 2020 - Mar 2024",
             },
             {
               company: "Admiral",
