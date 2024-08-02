@@ -223,7 +223,6 @@ function Body() {
                 "Worked at Admiral, an adblock recovery service, on the engineering team.",
                 "Trained and deployed a neural network to predict when to best engage a user with requests to turn off ad blocker.",
                 "Used features such as time of day and previous user behavior data to determine optimal engagement timing.",
-                "Improved adblock conversion rate by ~3% greatly increasing customer revenues.",
               ],
               location: "Gainesville, FL",
               date: "Nov 2019 - Feb 2020",
