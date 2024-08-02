@@ -253,7 +253,7 @@ function Body() {
               items: [
                 "Developed a low-cost operant chamber for mouse behavior experiments.",
                 "Created object tracking script to record mouse (x, y) position.",
-                "Received 1st place at Florida State Science Fair for work.",
+                "Received 3rd place at Florida State Science Fair for work.",
               ],
               location: "Gainesville, FL",
               date: "May 2016 - May 2017",
