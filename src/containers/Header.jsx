@@ -201,7 +201,7 @@ class Header extends Component {
         {/* Introduction */}
         <div style={style.introduction} className="l">
           {"I'm "}
-          <b>Z Nields</b>, a full stack software engineer with an interest in
+          <b>Zay Nields</b>, a full stack software engineer with an interest in
           machine learning.
           {" I "}
           love building products enabled by data&nbsp;
