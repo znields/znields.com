@@ -12,8 +12,8 @@ class Footer extends React.Component {
             <Social
               sites={[
                 "https://www.linkedin.com/in/znields/",
-                "https://twitter.com/z_nields",
-                "https://www.instagram.com/znields",
+                "https://twitter.com/zaynields",
+                "https://www.instagram.com/zaynields",
                 "https://github.com/znields",
                 "https://znields.medium.com",
               ]}
