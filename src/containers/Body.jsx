@@ -27,7 +27,7 @@ function Body() {
           {"I'm a software engineer at "}
           <SmallLink href="https://www.meta.com">Meta</SmallLink>
           {
-            " currently working on the People Data team. Prior to joining Meta, I studied computer science at the "
+            " currently working on the Recruiting Data and ML team. Prior to joining Meta, I studied computer science at the "
           }{" "}
           <SmallLink href="https://ufl.edu">University of Florida</SmallLink>.{" "}
           {
