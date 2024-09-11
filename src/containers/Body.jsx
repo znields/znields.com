@@ -209,10 +209,11 @@ function Body() {
             {
               company: "Meta",
               items: [
-                "Software engineer working on the Recruiting ML and Data team.",
-                "Lead initiatives to build out recruiting knowledge graphs for companies, skills, and other entity types.",
-                "Drove product improvements on surfaces like referrals tooling, the career site, and candidate search.",
-                "Aided ML model development by improving resume data features and improved overall resume data accuracy through resume standardization and merging techniques.",
+                "Software engineer working on the Recruiting Data and ML team.",
+                "Led initiatives to build knowledge graphs for companies, skills, and other entities, which are now used across 15+ internal tools at Meta.",
+                "Sped up the resume data melding pipeline by over 6x to enable new melding techniques to be pushed to production in only 4 days.",
+                "Drove product improvements on surfaces like referrals tooling, the career site, candidate search, and candidate onboarding through ML model deployment, knowledge graph integration, and workflow automation.",
+                "Trained ML models used across various tasks and improved resume data features and accuracy through standardization and merging techniques to drive end-to-end model improvements."
               ],
               location: "San Francisco, CA",
               date: "Feb 2020 - Mar 2024",
